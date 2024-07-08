@@ -20,7 +20,7 @@ export default function RootLayout({
         <html lang="en">
             <body className={`${inter.variable}`}>
                 <Providers>
-                  <Box width='screen' minHeight='screen' overflowX='hidden'>{children}</Box>
+                  <Box scrollbarWidth={'none'} width='screen' minHeight='screen' overflowX='hidden'>{children}</Box>
                 </Providers>
             </body>
         </html>
