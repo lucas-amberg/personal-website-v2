@@ -4,8 +4,11 @@ import { AboutMe } from "@/libs/sections/about-me/AboutMe";
 
 export default function Home() {
     return (
-        <VStack w='screen' px='80px' height='full'>
-            <AboutMe/>
+        <VStack
+            w="screen"
+            px="80px"
+            height="full">
+            <AboutMe />
         </VStack>
     );
 }
