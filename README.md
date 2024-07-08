@@ -17,25 +17,25 @@ This is mostly for myself to reference as I complete the site, just to have a go
 -   [x] Create a new Repository
 -   [x] Create a new Next.js project
 -   [x] Set up DX, branch protection rules, npm scripts
--   [x] Initialize UI libraries
--   [x] Create a README.md with tasks and description
--   [ ] Create an about me card
--   [ ] Create a link to view my resume (static upload)
--   [ ] Create a skills section
+-   [x] Initialize UI libraries ([#1](https://github.com/lucas-amberg/personal-website-v2/pull/1))
+-   [x] Create a README.md with tasks and description ([#2](https://github.com/lucas-amberg/personal-website-v2/pull/2))
+-   [ ] Create an about me card ([#3](https://github.com/lucas-amberg/personal-website-v2/issues/3))
+-   [ ] Create a link to view my resume (static upload) ([#5](https://github.com/lucas-amberg/personal-website-v2/issues/5))
+-   [ ] Create a skills section ([#6](https://github.com/lucas-amberg/personal-website-v2/issues/6))
     -   [ ] Create a component for skill types
     -   [ ] Create a component for skill items
--   [ ] Create an education section
+-   [ ] Create an education section ([#7](https://github.com/lucas-amberg/personal-website-v2/issues/7))
     -   [ ] Create a component for education items
--   [ ] Create a work experience section
+-   [ ] Create a work experience section ([#8](https://github.com/lucas-amberg/personal-website-v2/issues/8))
     -   [ ] Create a component for work experience items
--   [ ] Create a projects section
+-   [ ] Create a projects section ([#9](https://github.com/lucas-amberg/personal-website-v2/issues/9))
     -   [ ] Create a component for projects
--   [ ] Create an open source section
+-   [ ] Create an open source section ([#10](https://github.com/lucas-amberg/personal-website-v2/issues/10))
     -   [ ] Create a component for open source projects
--   [ ] Create a contact me section
+-   [ ] Create a contact me section ([#11](https://github.com/lucas-amberg/personal-website-v2/issues/11))
     -   [ ] Create a form for contact
     -   [ ] Create a component for contact form
--   [ ] Nice to Haves
+-   [ ] Nice to Haves _(No issues yet)_
     -   [ ] Create an admin dash
         -   [ ] Implement Authentication
         -   [ ] Create a Resume upload with S3
