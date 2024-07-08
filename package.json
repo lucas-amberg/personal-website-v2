@@ -3,15 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "prepare": "panda codegen",
+    "dev": "rm -rf .next && panda codegen && next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier:format": "prettier --write \"**/*.{ts,tsx,js,md,mdx,css,yaml}\"",
+    "prettier:check": "prettier --check \"**/*.{ts,tsx,js,md,mdx,css,yaml}\""
   },
   "dependencies": {
     "@pandacss/dev": "^0.41.0",
     "@radix-ui/themes": "^3.1.1",
+    "autoprefixer": "^10.4.19",
     "next": "14.2.4",
+    "pandacss-preset-radix-colors": "^0.2.0",
+    "postcss-import": "^16.1.0",
     "react": "^18",
     "react-awesome-reveal": "^4.2.12",
     "react-dom": "^18"
