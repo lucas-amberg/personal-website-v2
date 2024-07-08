@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/libs/utility/Providers/Providers";
+import { Box } from "panda";
 
 const inter = Inter({ subsets: ["latin"], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], variable: '--inter-font'});
 
@@ -18,7 +19,9 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={`${inter.variable}`}>
-                <Providers>{children}</Providers>
+                <Providers>
+                  <Box width='screen' minHeight='screen' overflowX='hidden'>{children}</Box>
+                </Providers>
             </body>
         </html>
     );
