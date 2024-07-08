@@ -18,8 +18,8 @@ This is mostly for myself to reference as I complete the site, just to have a go
 -   [x] Create a new Next.js project
 -   [x] Set up DX, branch protection rules, npm scripts
 -   [x] Initialize UI libraries ([#1](https://github.com/lucas-amberg/personal-website-v2/pull/1))
--   [x] Create a README.md with tasks and description ([#2](https://github.com/lucas-amberg/personal-website-v2/pull/2))
--   [ ] Create an about me card ([#3](https://github.com/lucas-amberg/personal-website-v2/issues/3))
+-   [x] Create a README.md with tasks and description ([#2](https://github.com/lucas-amberg/personal-website-v2/pull/2)) ([#12](https://github.com/lucas-amberg/personal-website-v2/pulls/12))
+-   [x] Create an about me card ([#3](https://github.com/lucas-amberg/personal-website-v2/issues/3)) ([#13](https://github.com/lucas-amberg/personal-website-v2/pulls/13))
 -   [ ] Create a link to view my resume (static upload) ([#5](https://github.com/lucas-amberg/personal-website-v2/issues/5))
 -   [ ] Create a skills section ([#6](https://github.com/lucas-amberg/personal-website-v2/issues/6))
     -   [ ] Create a component for skill types
