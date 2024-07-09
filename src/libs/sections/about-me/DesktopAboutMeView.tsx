@@ -16,7 +16,7 @@ export function DesktopAboutMeView() {
                 lg: "flex",
             }}
             position="relative"
-            height="screen">
+            height="min(100dvh, 100vh)">
             <VStack
                 alignItems="start"
                 borderRadius="12px"
@@ -75,6 +75,7 @@ export function DesktopAboutMeView() {
                 })}
                 triggerOnce
                 direction="up"
+                fraction={0}
                 duration={1000}>
                 <Image
                     src="/images/me-transparent.png"

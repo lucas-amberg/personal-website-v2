@@ -20,3 +20,13 @@
         --cursor-switch: pointer;
     }
 }
+
+:root {
+    --dvh: 100vh;
+}
+
+@supports (height: 100dvh) {
+    :root {
+        --dvh: 100dvh;
+    }
+}

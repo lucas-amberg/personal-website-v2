@@ -11,9 +11,9 @@ export function MobileAboutMeView() {
         <HStack
             width="98%"
             justifyContent="space-evenly"
-            height="screen"
             position="relative"
             alignItems="flex-start"
+            height="min(100dvh, 100vh)"
             display={{
                 base: "flex",
                 lg: "none",
@@ -79,7 +79,8 @@ export function MobileAboutMeView() {
                 })}
                 triggerOnce
                 direction="up"
-                duration={1000}>
+                duration={1000}
+                fraction={0}>
                 <Image
                     src="/images/me-transparent.png"
                     width="400"
