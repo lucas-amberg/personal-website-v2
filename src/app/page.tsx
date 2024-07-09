@@ -14,6 +14,7 @@ export default function Home() {
                 base: "20px",
                 lg: "0px",
             }}
+            overflowX="hidden"
             height="full">
             <AboutMe />
             <VStack height="800vh"></VStack>

@@ -22,11 +22,14 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${inter.variable}`}>
+            <body
+                style={{ overflowX: "hidden" }}
+                className={`${inter.variable}`}>
                 <Providers>
                     <Box
                         scrollbarWidth={"none"}
                         width="screen"
+                        padding="0"
                         minHeight="screen"
                         overflowX="hidden">
                         {children}

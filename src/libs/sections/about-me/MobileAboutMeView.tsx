@@ -13,7 +13,7 @@ export function MobileAboutMeView() {
             justifyContent="space-evenly"
             position="relative"
             alignItems="flex-start"
-            height="min(100dvh, 100vh)"
+            height="90vh"
             display={{
                 base: "flex",
                 lg: "none",
