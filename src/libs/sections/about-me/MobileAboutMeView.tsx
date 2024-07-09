@@ -38,11 +38,13 @@ export function MobileAboutMeView() {
                         height="50"
                     />
                 </HStack>
-                <Text size={{ initial: "4", sm: "5" }}>
+                <Text size={{ initial: "3", sm: "5" }}>
                     As an enthusiastic and dedicated
                 </Text>
-                <Heading size="9">Software Engineer</Heading>
-                <Text size={{ initial: "4", sm: "5" }}>
+                <Heading size={{ initial: "8", sm: "9" }}>
+                    Software Engineer
+                </Heading>
+                <Text size={{ initial: "3", sm: "5" }}>
                     currently pursuing a Bachelor of Science in Computer Science
                     at
                 </Text>
@@ -52,7 +54,7 @@ export function MobileAboutMeView() {
                     California State University, Long Beach
                     <span style={{ color: "white" }}>,</span>
                 </Heading>
-                <Text size={{ initial: "4", sm: "5" }}>I am set to </Text>
+                <Text size={{ initial: "3", sm: "5" }}>I am set to </Text>
                 <Heading size="6">
                     graduate in{" "}
                     <span style={{ color: token("colors.purple.9") }}>
@@ -61,7 +63,7 @@ export function MobileAboutMeView() {
                     .
                 </Heading>
                 <Box width="60%">
-                    <Text size={{ initial: "4", sm: "5" }}>
+                    <Text size={{ initial: "3", sm: "5" }}>
                         My professional journey includes years of hands-on
                         experience in full stack web development and software
                         engineering.
@@ -75,7 +77,7 @@ export function MobileAboutMeView() {
                     position: "absolute",
                     bottom: "0",
                     right: "0",
-                    width: { base: "50%", sm: "40%", md: "37%" },
+                    width: { base: "35%", sm: "34%", md: "30%" },
                 })}
                 triggerOnce
                 direction="up"
