@@ -6,9 +6,21 @@ export default function Home() {
     return (
         <VStack
             w="screen"
-            px="80px"
+            px={{
+                base: '20px',
+                lg: '80px'
+            }}
+            py={{
+                base: '20px',
+                lg: '0px'
+            }}
             height="full">
             <AboutMe />
+            <VStack
+                height='800vh'
+            >
+
+            </VStack>
         </VStack>
     );
 }
