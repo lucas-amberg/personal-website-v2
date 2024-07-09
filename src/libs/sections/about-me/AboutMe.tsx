@@ -11,9 +11,8 @@ export function AboutMe() {
     return (
         <>
             <Box
-            padding='0'
-            overflow='hidden'
-            >
+                padding="0"
+                overflow="hidden">
                 <DesktopAboutMeView />
                 <MobileAboutMeView />
             </Box>

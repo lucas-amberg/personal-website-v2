@@ -12,8 +12,8 @@ export function MobileAboutMeView() {
             width="98%"
             justifyContent="space-evenly"
             height="screen"
-            position='relative'
-            alignItems='flex-start'
+            position="relative"
+            alignItems="flex-start"
             display={{
                 base: "flex",
                 lg: "none",
@@ -27,18 +27,22 @@ export function MobileAboutMeView() {
                 <HStack
                     gap="25"
                     alignItems="flex-end">
-                    <Heading size={{initial: '6', sm: '8'}}>Lucas Amberg</Heading>
+                    <Heading size={{ initial: "6", sm: "8" }}>
+                        Lucas Amberg
+                    </Heading>
                     <Image
                         src="/logos/logo.jpg"
-                        style={{ borderRadius: "12px"}}
+                        style={{ borderRadius: "12px" }}
                         alt="Lucas Amberg Logo"
                         width="50"
                         height="50"
                     />
                 </HStack>
-                <Text size={{initial: '4', sm: '5'}}>As an enthusiastic and dedicated</Text>
+                <Text size={{ initial: "4", sm: "5" }}>
+                    As an enthusiastic and dedicated
+                </Text>
                 <Heading size="9">Software Engineer</Heading>
-                <Text size={{initial: '4', sm: '5'}}>
+                <Text size={{ initial: "4", sm: "5" }}>
                     currently pursuing a Bachelor of Science in Computer Science
                     at
                 </Text>
@@ -48,7 +52,7 @@ export function MobileAboutMeView() {
                     California State University, Long Beach
                     <span style={{ color: "white" }}>,</span>
                 </Heading>
-                <Text size={{initial: '4', sm: '5'}}>I am set to </Text>
+                <Text size={{ initial: "4", sm: "5" }}>I am set to </Text>
                 <Heading size="6">
                     graduate in{" "}
                     <span style={{ color: token("colors.purple.9") }}>
@@ -56,16 +60,23 @@ export function MobileAboutMeView() {
                     </span>
                     .
                 </Heading>
-                <Box width='60%'>
-                  <Text size={{initial: '4', sm: '5'}}>
-                      My professional journey includes years of hands-on
-                      experience in full stack web development and software
-                      engineering.
-                  </Text>
+                <Box width="60%">
+                    <Text size={{ initial: "4", sm: "5" }}>
+                        My professional journey includes years of hands-on
+                        experience in full stack web development and software
+                        engineering.
+                    </Text>
                 </Box>
             </VStack>
             <Fade
-                className={css({marginLeft: "auto", marginTop: "auto", position: 'absolute', bottom: '0', right:'0', width: {base: '50%', sm: '40%', md: '37%'}})}
+                className={css({
+                    marginLeft: "auto",
+                    marginTop: "auto",
+                    position: "absolute",
+                    bottom: "0",
+                    right: "0",
+                    width: { base: "50%", sm: "40%", md: "37%" },
+                })}
                 triggerOnce
                 direction="up"
                 duration={1000}>
@@ -73,7 +84,6 @@ export function MobileAboutMeView() {
                     src="/images/me-transparent.png"
                     width="400"
                     height="700"
-                    
                     alt="Lucas Amberg"
                 />
             </Fade>

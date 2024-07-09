@@ -15,7 +15,7 @@ export function DesktopAboutMeView() {
                 base: "none",
                 lg: "flex",
             }}
-            position='relative'
+            position="relative"
             height="screen">
             <VStack
                 alignItems="start"
@@ -29,15 +29,17 @@ export function DesktopAboutMeView() {
                     <Heading size="8">Lucas Amberg</Heading>
                     <Image
                         src="/logos/logo.jpg"
-                        style={{ borderRadius: "12px"}}
+                        style={{ borderRadius: "12px" }}
                         alt="Lucas Amberg Logo"
                         width="75"
                         height="75"
                     />
                 </HStack>
-                <Text size={{initial: '5', xl: '6'}}>As an enthusiastic and dedicated</Text>
+                <Text size={{ initial: "5", xl: "6" }}>
+                    As an enthusiastic and dedicated
+                </Text>
                 <Heading size="9">Software Engineer</Heading>
-                <Text size={{initial: '5', xl: '6'}}>
+                <Text size={{ initial: "5", xl: "6" }}>
                     currently pursuing a Bachelor of Science in Computer Science
                     at
                 </Text>
@@ -47,7 +49,7 @@ export function DesktopAboutMeView() {
                     California State University, Long Beach
                     <span style={{ color: "white" }}>,</span>
                 </Heading>
-                <Text size={{initial: '5', xl: '6'}}>I am set to </Text>
+                <Text size={{ initial: "5", xl: "6" }}>I am set to </Text>
                 <Heading size="8">
                     graduate in{" "}
                     <span style={{ color: token("colors.purple.9") }}>
@@ -55,14 +57,22 @@ export function DesktopAboutMeView() {
                     </span>
                     .
                 </Heading>
-                <Text size={{initial: '5', xl: '6'}}>
+                <Text size={{ initial: "5", xl: "6" }}>
                     My professional journey includes years of hands-on
                     experience in full stack web development and software
                     engineering.
                 </Text>
             </VStack>
             <Fade
-                className={css({marginLeft: "auto", position: 'absolute', right: '0', bottom: '0', marginTop: "auto", maxHeight: '80vh', width: {lg: '30%', xl: '25%'}})}
+                className={css({
+                    marginLeft: "auto",
+                    position: "absolute",
+                    right: "0",
+                    bottom: "0",
+                    marginTop: "auto",
+                    maxHeight: "80vh",
+                    width: { lg: "30%", xl: "25%" },
+                })}
                 triggerOnce
                 direction="up"
                 duration={1000}>

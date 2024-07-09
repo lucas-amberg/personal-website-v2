@@ -7,20 +7,16 @@ export default function Home() {
         <VStack
             w="screen"
             px={{
-                base: '20px',
-                lg: '80px'
+                base: "20px",
+                lg: "80px",
             }}
             py={{
-                base: '20px',
-                lg: '0px'
+                base: "20px",
+                lg: "0px",
             }}
             height="full">
             <AboutMe />
-            <VStack
-                height='800vh'
-            >
-
-            </VStack>
+            <VStack height="800vh"></VStack>
         </VStack>
     );
 }
