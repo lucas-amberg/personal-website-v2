@@ -42,7 +42,11 @@ export function MobileAboutMeView() {
                     As an enthusiastic and dedicated
                 </Text>
                 <Heading size={{ initial: "8", sm: "9" }}>
-                    Software Engineer
+                    <Fade
+                        cascade
+                        damping={0.1}>
+                        {"Software\nEngineer"}
+                    </Fade>
                 </Heading>
                 <Text size={{ initial: "3", sm: "5" }}>
                     currently pursuing a Bachelor of Science in Computer Science

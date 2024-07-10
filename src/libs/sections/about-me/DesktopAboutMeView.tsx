@@ -38,7 +38,13 @@ export function DesktopAboutMeView() {
                 <Text size={{ initial: "5", xl: "6" }}>
                     As an enthusiastic and dedicated
                 </Text>
-                <Heading size="9">Software Engineer</Heading>
+                <Heading size="9">
+                    <Fade
+                        cascade
+                        damping={0.1}>
+                        Software Engineer
+                    </Fade>
+                </Heading>
                 <Text size={{ initial: "5", xl: "6" }}>
                     currently pursuing a Bachelor of Science in Computer Science
                     at
