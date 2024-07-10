@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { VStack } from "panda";
 import { AboutMe } from "@/libs/sections/about-me/AboutMe";
+import { Skills } from "@/libs/sections/skills/Skills";
 
 export default function Home() {
     return (
@@ -17,6 +18,7 @@ export default function Home() {
             overflowX="hidden"
             height="full">
             <AboutMe />
+            <Skills />
             <VStack height="800vh"></VStack>
         </VStack>
     );
