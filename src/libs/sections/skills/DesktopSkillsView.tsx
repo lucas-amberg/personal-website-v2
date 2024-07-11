@@ -2,6 +2,7 @@ import { VStack, HStack } from "panda";
 import { Heading, Text } from "@radix-ui/themes";
 import { Fade, Rotate } from "react-awesome-reveal";
 import Image from "next/image";
+import { token } from "ss/tokens";
 
 export function DesktopSkillsView() {
     const skills = [
@@ -15,7 +16,7 @@ export function DesktopSkillsView() {
     ];
 
     return (
-        <VStack
+        <HStack
             width="screen"
             position="relative"
             alignItems="center"
@@ -23,6 +24,35 @@ export function DesktopSkillsView() {
             justifyContent="center"
             height="screen"
             bg="gray.12">
+            <VStack
+                height="100%"
+                justifyContent="center"
+                width="50%"
+                alignItems="flex-start">
+                <Heading size="8">
+                    As a{" "}
+                    <span
+                        style={{
+                            color: token("colors.purple.9"),
+                        }}>
+                        software engineer
+                    </span>
+                </Heading>
+                <Text size="4">
+                    I am always learning and adopting new skills and
+                    technologies into my tech stack.
+                </Text>
+                <Text size="4">
+                    I explore options and find ways to integrate new frameworks,
+                    libraries, and other innovative tools into my projects and
+                    development processes.
+                </Text>
+                <Text
+                    size="5"
+                    color="blue">
+                    Learning is part of the journey
+                </Text>
+            </VStack>
             <VStack
                 width="50%"
                 marginLeft="auto"
@@ -100,6 +130,6 @@ export function DesktopSkillsView() {
                     height={197}
                 />
             </Rotate>
-        </VStack>
+        </HStack>
     );
 }
