@@ -1,7 +1,19 @@
 import { VStack, HStack } from "panda";
-import { Heading } from "@radix-ui/themes";
+import { Heading, Text } from "@radix-ui/themes";
+import { Fade } from "react-awesome-reveal";
+import Image from "next/image";
 
 export function DesktopSkillsView() {
+    const skills = [
+        "Next.js (& React)",
+        "TypeScript (& JavaScript)",
+        "Neo4j",
+        "Full Stack Web Development",
+        "Nx Monorepo",
+        "Turborepo",
+        "Python"
+    ];
+
     return (
         <VStack
             width="screen"
@@ -11,12 +23,38 @@ export function DesktopSkillsView() {
             justifyContent="center"
             height="screen"
             bg="gray.12">
-            <HStack
+            <VStack
                 width="50%"
                 marginLeft="auto"
                 height="100%">
                 <Heading size="9">Technical Skills</Heading>
-            </HStack>
+                <VStack
+                    overflow="hidden"
+                    bg="#111"
+                    width="100%"
+                    p="40px"
+                    gap='15px'
+                    alignItems="flex-start"
+                    height="100%"
+                    borderRadius="12px">
+                    <Fade
+                        cascade
+                        triggerOnce
+                        damping={0.3}
+                        direction="left">
+                        {skills
+                            .sort((a, b) => b.length - a.length)
+                            .map((skill) => (
+                                <Text
+                                    size="6"
+                                    weight="bold">
+                                    - {skill}
+                                </Text>
+                            ))}
+                    </Fade>
+                </VStack>
+            </VStack>
+            
         </VStack>
     );
 }
