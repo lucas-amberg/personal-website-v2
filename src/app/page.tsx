@@ -15,7 +15,7 @@ export default function Home() {
                 base: "20px",
                 lg: "0px",
             }}
-            gap='0'
+            gap="0"
             overflowX="hidden"
             height="full">
             <AboutMe />

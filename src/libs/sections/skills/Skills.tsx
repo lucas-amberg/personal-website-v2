@@ -12,8 +12,7 @@ export function Skills() {
             <Box
                 padding="0"
                 overflow="hidden"
-                position='relative'
-                >
+                position="relative">
                 <DesktopSkillsView />
             </Box>
         </>

@@ -11,7 +11,7 @@ export function DesktopSkillsView() {
         "Full Stack Web Development",
         "Nx Monorepo",
         "Turborepo",
-        "Python"
+        "Python",
     ];
 
     return (
@@ -33,7 +33,7 @@ export function DesktopSkillsView() {
                     bg="#111"
                     width="100%"
                     p="40px"
-                    gap='15px'
+                    gap="15px"
                     alignItems="flex-start"
                     height="100%"
                     borderRadius="12px">
@@ -54,14 +54,50 @@ export function DesktopSkillsView() {
                     </Fade>
                 </VStack>
             </VStack>
-            <Rotate style={{position: 'absolute', top: '30px', left: '36px', rotate: '23deg'}} direction="top-left">
-                <Image src={'/logos/react.png'} alt='React Logo' width={178} height={178}  />
+            <Rotate
+                style={{
+                    position: "absolute",
+                    top: "30px",
+                    left: "36px",
+                    rotate: "23deg",
+                }}
+                direction="top-left">
+                <Image
+                    src={"/logos/react.png"}
+                    alt="React Logo"
+                    width={178}
+                    height={178}
+                />
             </Rotate>
-            <Rotate style={{position: 'absolute', bottom: '76px', left: '59px', rotate: '-30deg'}} direction="top-right">
-                <Image src={'/logos/python.svg'} alt='Python Logo' width={178} height={178}  />
+            <Rotate
+                style={{
+                    position: "absolute",
+                    bottom: "76px",
+                    left: "59px",
+                    rotate: "-30deg",
+                }}
+                direction="top-right">
+                <Image
+                    src={"/logos/python.svg"}
+                    alt="Python Logo"
+                    width={178}
+                    height={178}
+                />
             </Rotate>
-            <Rotate style={{position: 'absolute', bottom: '76px', right: '59px', rotate: '23deg'}} direction="bottom-left">
-                <Image src={'/logos/javascript.png'} alt='Python Logo' width={197} height={197}  />
+            <Rotate
+                style={{
+                    position: "absolute",
+                    bottom: "76px",
+                    right: "59px",
+                    rotate: "23deg",
+                }}
+                direction="bottom-left">
+                <Image
+                    src={"/logos/javascript.png"}
+                    alt="Python Logo"
+                    width={197}
+                    height={197}
+                />
             </Rotate>
         </VStack>
     );
