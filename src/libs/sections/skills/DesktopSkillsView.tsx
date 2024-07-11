@@ -88,16 +88,31 @@ export function DesktopSkillsView() {
             <Rotate
                 style={{
                     position: "absolute",
-                    top: "30px",
-                    left: "36px",
+                    top: "22px",
+                    left: "29px",
+                    rotate: "23deg",
+                }}
+                direction="top-left">
+                <Image
+                    src={"/logos/next-js.svg"}
+                    alt="Next.js Logo"
+                    width={178}
+                    height={178}
+                />
+            </Rotate>
+            <Rotate
+                style={{
+                    position: "absolute",
+                    bottom: "62px",
+                    left: "230px",
                     rotate: "23deg",
                 }}
                 direction="top-left">
                 <Image
                     src={"/logos/react.png"}
                     alt="React Logo"
-                    width={178}
-                    height={178}
+                    width={40}
+                    height={40}
                 />
             </Rotate>
             <Rotate
@@ -124,10 +139,25 @@ export function DesktopSkillsView() {
                 }}
                 direction="bottom-left">
                 <Image
-                    src={"/logos/javascript.png"}
-                    alt="Python Logo"
+                    src={"/logos/typescript.svg"}
+                    alt="TypeScript Logo"
                     width={197}
                     height={197}
+                />
+            </Rotate>
+            <Rotate
+                style={{
+                    position: "absolute",
+                    bottom: "39px",
+                    right: "242px",
+                    rotate: "-22deg",
+                }}
+                direction="bottom-left">
+                <Image
+                    src={"/logos/javascript.png"}
+                    alt="JavaScript Logo"
+                    width={67}
+                    height={67}
                 />
             </Rotate>
         </HStack>
