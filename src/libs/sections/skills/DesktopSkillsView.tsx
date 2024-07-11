@@ -1,6 +1,6 @@
 import { VStack, HStack } from "panda";
 import { Heading, Text } from "@radix-ui/themes";
-import { Fade } from "react-awesome-reveal";
+import { Fade, Rotate } from "react-awesome-reveal";
 import Image from "next/image";
 
 export function DesktopSkillsView() {
@@ -54,7 +54,15 @@ export function DesktopSkillsView() {
                     </Fade>
                 </VStack>
             </VStack>
-            
+            <Rotate style={{position: 'absolute', top: '30px', left: '36px', rotate: '23deg'}} direction="top-left">
+                <Image src={'/logos/react.png'} alt='React Logo' width={178} height={178}  />
+            </Rotate>
+            <Rotate style={{position: 'absolute', bottom: '76px', left: '59px', rotate: '-30deg'}} direction="top-right">
+                <Image src={'/logos/python.svg'} alt='Python Logo' width={178} height={178}  />
+            </Rotate>
+            <Rotate style={{position: 'absolute', bottom: '76px', right: '59px', rotate: '23deg'}} direction="bottom-left">
+                <Image src={'/logos/javascript.png'} alt='Python Logo' width={197} height={197}  />
+            </Rotate>
         </VStack>
     );
 }
