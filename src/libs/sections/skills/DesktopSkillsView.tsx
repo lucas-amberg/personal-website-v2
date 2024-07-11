@@ -47,6 +47,7 @@ export function DesktopSkillsView() {
                             .map((skill) => (
                                 <Text
                                     size="6"
+                                    key={skill}
                                     weight="bold">
                                     - {skill}
                                 </Text>
