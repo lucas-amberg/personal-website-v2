@@ -22,8 +22,8 @@ export function DesktopSkillsView() {
             alignItems="center"
             p="90px"
             display={{
-                base: 'none',
-                lg: 'flex'
+                base: "none",
+                lg: "flex",
             }}
             justifyContent="center"
             height="screen"
@@ -32,7 +32,7 @@ export function DesktopSkillsView() {
                 height="100%"
                 justifyContent="center"
                 width="50%"
-                zIndex='10'
+                zIndex="10"
                 alignItems="flex-start">
                 <Heading size="8">
                     As a{" "}
@@ -41,7 +41,8 @@ export function DesktopSkillsView() {
                             color: token("colors.purple.9"),
                         }}>
                         software engineer
-                    </span>...
+                    </span>
+                    ...
                 </Heading>
                 <Text size="4">
                     I am always learning and adopting new skills and
@@ -61,9 +62,12 @@ export function DesktopSkillsView() {
             <VStack
                 width="50%"
                 marginLeft="auto"
-                
                 height="100%">
-                <Heading size="9" style={{zIndex:'10'}}>Technical Skills</Heading>
+                <Heading
+                    size="9"
+                    style={{ zIndex: "10" }}>
+                    Technical Skills
+                </Heading>
                 <VStack
                     overflow="hidden"
                     bg="#111"
@@ -84,7 +88,7 @@ export function DesktopSkillsView() {
                                 <Text
                                     size="6"
                                     style={{
-                                        zIndex: '10'
+                                        zIndex: "10",
                                     }}
                                     key={skill}
                                     weight="bold">
@@ -94,7 +98,8 @@ export function DesktopSkillsView() {
                     </Fade>
                 </VStack>
             </VStack>
-            <Rotate triggerOnce
+            <Rotate
+                triggerOnce
                 style={{
                     position: "absolute",
                     top: "22px",
@@ -109,7 +114,8 @@ export function DesktopSkillsView() {
                     height={178}
                 />
             </Rotate>
-            <Rotate triggerOnce
+            <Rotate
+                triggerOnce
                 style={{
                     position: "absolute",
                     bottom: "62px",
@@ -124,7 +130,8 @@ export function DesktopSkillsView() {
                     height={72}
                 />
             </Rotate>
-            <Rotate triggerOnce
+            <Rotate
+                triggerOnce
                 style={{
                     position: "absolute",
                     bottom: "76px",
@@ -139,7 +146,8 @@ export function DesktopSkillsView() {
                     height={178}
                 />
             </Rotate>
-            <Rotate triggerOnce
+            <Rotate
+                triggerOnce
                 style={{
                     position: "absolute",
                     bottom: "76px",
@@ -154,7 +162,8 @@ export function DesktopSkillsView() {
                     height={197}
                 />
             </Rotate>
-            <Rotate triggerOnce
+            <Rotate
+                triggerOnce
                 style={{
                     position: "absolute",
                     bottom: "39px",
@@ -169,7 +178,8 @@ export function DesktopSkillsView() {
                     height={67}
                 />
             </Rotate>
-            <Rotate triggerOnce
+            <Rotate
+                triggerOnce
                 style={{
                     position: "absolute",
                     top: "12px",
