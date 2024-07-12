@@ -21,6 +21,10 @@ export function DesktopSkillsView() {
             position="relative"
             alignItems="center"
             p="90px"
+            display={{
+                base: 'none',
+                lg: 'flex'
+            }}
             justifyContent="center"
             height="screen"
             bg="gray.12">
@@ -28,6 +32,7 @@ export function DesktopSkillsView() {
                 height="100%"
                 justifyContent="center"
                 width="50%"
+                zIndex='10'
                 alignItems="flex-start">
                 <Heading size="8">
                     As a{" "}
@@ -36,7 +41,7 @@ export function DesktopSkillsView() {
                             color: token("colors.purple.9"),
                         }}>
                         software engineer
-                    </span>
+                    </span>...
                 </Heading>
                 <Text size="4">
                     I am always learning and adopting new skills and
@@ -50,14 +55,15 @@ export function DesktopSkillsView() {
                 <Text
                     size="5"
                     color="blue">
-                    Learning is part of the journey
+                    Learning isn't just part of the journey, it's the best part.
                 </Text>
             </VStack>
             <VStack
                 width="50%"
                 marginLeft="auto"
+                
                 height="100%">
-                <Heading size="9">Technical Skills</Heading>
+                <Heading size="9" style={{zIndex:'10'}}>Technical Skills</Heading>
                 <VStack
                     overflow="hidden"
                     bg="#111"
@@ -77,6 +83,9 @@ export function DesktopSkillsView() {
                             .map((skill) => (
                                 <Text
                                     size="6"
+                                    style={{
+                                        zIndex: '10'
+                                    }}
                                     key={skill}
                                     weight="bold">
                                     - {skill}
@@ -85,7 +94,7 @@ export function DesktopSkillsView() {
                     </Fade>
                 </VStack>
             </VStack>
-            <Rotate
+            <Rotate triggerOnce
                 style={{
                     position: "absolute",
                     top: "22px",
@@ -100,7 +109,7 @@ export function DesktopSkillsView() {
                     height={178}
                 />
             </Rotate>
-            <Rotate
+            <Rotate triggerOnce
                 style={{
                     position: "absolute",
                     bottom: "62px",
@@ -111,11 +120,11 @@ export function DesktopSkillsView() {
                 <Image
                     src={"/logos/react.png"}
                     alt="React Logo"
-                    width={40}
-                    height={40}
+                    width={72}
+                    height={72}
                 />
             </Rotate>
-            <Rotate
+            <Rotate triggerOnce
                 style={{
                     position: "absolute",
                     bottom: "76px",
@@ -130,7 +139,7 @@ export function DesktopSkillsView() {
                     height={178}
                 />
             </Rotate>
-            <Rotate
+            <Rotate triggerOnce
                 style={{
                     position: "absolute",
                     bottom: "76px",
@@ -145,7 +154,7 @@ export function DesktopSkillsView() {
                     height={197}
                 />
             </Rotate>
-            <Rotate
+            <Rotate triggerOnce
                 style={{
                     position: "absolute",
                     bottom: "39px",
@@ -158,6 +167,21 @@ export function DesktopSkillsView() {
                     alt="JavaScript Logo"
                     width={67}
                     height={67}
+                />
+            </Rotate>
+            <Rotate triggerOnce
+                style={{
+                    position: "absolute",
+                    top: "12px",
+                    right: "12px",
+                    rotate: "-22deg",
+                }}
+                direction="top-right">
+                <Image
+                    src={"/logos/neo4j.svg"}
+                    alt="Neo4j Logo"
+                    width={162}
+                    height={162}
                 />
             </Rotate>
         </HStack>
