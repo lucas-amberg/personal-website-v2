@@ -5,6 +5,7 @@ import { Heading, Text } from "@radix-ui/themes";
 import { Fade } from "react-awesome-reveal";
 import { token } from "ss/tokens";
 import { DesktopSkillsView } from "./DesktopSkillsView";
+import { MobileSkillsView } from "./MobileSkillsView";
 
 export function Skills() {
     return (
@@ -14,6 +15,7 @@ export function Skills() {
                 overflow="hidden"
                 position="relative">
                 <DesktopSkillsView />
+                <MobileSkillsView />
             </Box>
         </>
     );
