@@ -6,21 +6,20 @@ import { token } from "ss/tokens";
 import { skills } from "@/libs/utility/constants/skills";
 
 export function MobileSkillsView() {
-
     const images = [
-      {src: '/logos/next-js.svg', alt: 'Next.js Logo'},
-      {src: '/logos/neo4j.svg', alt: 'Neo4j Logo'},
-      {src: '/logos/typescript.svg', alt: 'TypeScript Logo'},
-      {src: '/logos/python.svg', alt: 'Python Logo'}
-    ]
+        { src: "/logos/next-js.svg", alt: "Next.js Logo" },
+        { src: "/logos/neo4j.svg", alt: "Neo4j Logo" },
+        { src: "/logos/typescript.svg", alt: "TypeScript Logo" },
+        { src: "/logos/python.svg", alt: "Python Logo" },
+    ];
 
     return (
         <VStack
             width="screen"
             position="relative"
             alignItems="center"
-            gap='20px'
-            py='40px'
+            gap="20px"
+            py="40px"
             p="20px"
             display={{
                 base: "flex",
@@ -30,12 +29,11 @@ export function MobileSkillsView() {
             minHeight="screen"
             bg="gray.12">
             <VStack
-              width='100%'
-              alignItems='flex-start'
+                width="100%"
+                alignItems="flex-start"
                 height="100%">
                 <Heading
                     size="9"
-                    
                     style={{ zIndex: "10" }}>
                     Technical Skills
                 </Heading>
@@ -70,9 +68,21 @@ export function MobileSkillsView() {
                 </VStack>
             </VStack>
             <HStack>
-              <Fade direction='up' damping={0.3} cascade triggerOnce>
-                {images.map((image, index) => <Image src={image.src} key={index} alt={image.alt} width={140} height={140} />)}
-              </Fade>
+                <Fade
+                    direction="up"
+                    damping={0.3}
+                    cascade
+                    triggerOnce>
+                    {images.map((image, index) => (
+                        <Image
+                            src={image.src}
+                            key={index}
+                            alt={image.alt}
+                            width={140}
+                            height={140}
+                        />
+                    ))}
+                </Fade>
             </HStack>
             <VStack
                 height="100%"
@@ -101,7 +111,8 @@ export function MobileSkillsView() {
                 <Text
                     size="5"
                     color="blue">
-                    Learning isn't just a part of the journey, it's the best part of the journey.
+                    Learning isn't just a part of the journey, it's the best
+                    part of the journey.
                 </Text>
             </VStack>
         </VStack>

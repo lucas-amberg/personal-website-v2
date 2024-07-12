@@ -6,7 +6,6 @@ import { token } from "ss/tokens";
 import { skills } from "@/libs/utility/constants/skills";
 
 export function DesktopSkillsView() {
-
     return (
         <HStack
             width="screen"
@@ -48,8 +47,9 @@ export function DesktopSkillsView() {
                 <Text
                     size="5"
                     color="blue">
-                                            Learning isn't just a part of the journey, it's the best part of the journey.
-                                            </Text>
+                    Learning isn't just a part of the journey, it's the best
+                    part of the journey.
+                </Text>
             </VStack>
             <VStack
                 width="50%"

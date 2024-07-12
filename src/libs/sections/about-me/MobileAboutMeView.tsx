@@ -7,7 +7,6 @@ import { token } from "ss/tokens";
 import { css } from "ss/css";
 
 export function MobileAboutMeView() {
-    
     return (
         <HStack
             width="98%"
