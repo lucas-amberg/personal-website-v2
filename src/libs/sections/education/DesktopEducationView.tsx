@@ -2,6 +2,7 @@ import { HStack, VStack } from "panda";
 import { Heading, Text } from "@radix-ui/themes";
 import { Fade } from "react-awesome-reveal";
 import { token } from "ss/tokens";
+import { EducationItem } from "@/libs/ui/education/EducationItem";
 
 export function DesktopEducationView() {
     return (
@@ -9,7 +10,20 @@ export function DesktopEducationView() {
             width="screen"
             minHeight="screen"
             p="90">
-            <VStack></VStack>
+            <VStack width="50%">
+                <EducationItem
+                    color="black"
+                    timeframe="Nov 2022 - May 2026"
+                    width="90%"
+                    bg="yellow.8"
+                    image={{
+                        src: "/logos/csulb-logo.png",
+                        alt: "California State University, Long Beach Logo",
+                    }}
+                    heading="California State University, Long Beach"
+                    headingSize="8"
+                />
+            </VStack>
             <VStack
                 width="50%"
                 alignItems="flex-start">

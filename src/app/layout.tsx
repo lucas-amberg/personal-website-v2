@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Providers } from "@/libs/utility/Providers/Providers";
+import { Providers } from "@/libs/utility/providers/Providers";
 import { Box } from "panda";
 
 const inter = Inter({
