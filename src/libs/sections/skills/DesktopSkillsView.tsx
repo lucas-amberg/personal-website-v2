@@ -3,17 +3,9 @@ import { Heading, Text } from "@radix-ui/themes";
 import { Fade, Rotate } from "react-awesome-reveal";
 import Image from "next/image";
 import { token } from "ss/tokens";
+import { skills } from "@/libs/utility/constants/skills";
 
 export function DesktopSkillsView() {
-    const skills = [
-        "Next.js (& React)",
-        "TypeScript (& JavaScript)",
-        "Neo4j",
-        "Full Stack Web Development",
-        "Nx Monorepo",
-        "Turborepo",
-        "Python",
-    ];
 
     return (
         <HStack
@@ -56,8 +48,8 @@ export function DesktopSkillsView() {
                 <Text
                     size="5"
                     color="blue">
-                    Learning isn't just part of the journey, it's the best part.
-                </Text>
+                                            Learning isn't just a part of the journey, it's the best part of the journey.
+                                            </Text>
             </VStack>
             <VStack
                 width="50%"
