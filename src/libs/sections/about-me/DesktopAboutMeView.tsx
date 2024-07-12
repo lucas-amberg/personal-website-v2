@@ -41,6 +41,7 @@ export function DesktopAboutMeView() {
                 <Heading size="9">
                     <Fade
                         cascade
+                        triggerOnce
                         damping={0.1}>
                         Software Engineer
                     </Fade>
