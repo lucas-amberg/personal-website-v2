@@ -22,8 +22,8 @@ This is mostly for myself to reference as I complete the site, just to have a go
 -   [x] Create an about me card ([#3](https://github.com/lucas-amberg/personal-website-v2/issues/3)) ([#13](https://github.com/lucas-amberg/personal-website-v2/pull/13))
 -   [ ] Create a link to view my resume (static upload) ([#5](https://github.com/lucas-amberg/personal-website-v2/issues/5))
 -   [x] Create a skills section ([#6](https://github.com/lucas-amberg/personal-website-v2/issues/6)) ([#15](https://github.com/lucas-amberg/personal-website-v2/pull/15))
--   [ ] Create an education section ([#7](https://github.com/lucas-amberg/personal-website-v2/issues/7))
-    -   [ ] Create a component for education items
+-   [x] Create an education section ([#7](https://github.com/lucas-amberg/personal-website-v2/issues/7)) ([#16](https://github.com/lucas-amberg/personal-website-v2/pull/16))
+    -   [x] Create a component for education items
 -   [ ] Create a work experience section ([#8](https://github.com/lucas-amberg/personal-website-v2/issues/8))
     -   [ ] Create a component for work experience items
 -   [ ] Create a projects section ([#9](https://github.com/lucas-amberg/personal-website-v2/issues/9))
