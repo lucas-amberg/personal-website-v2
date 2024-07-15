@@ -10,8 +10,8 @@ export function DesktopEducationView() {
             width="screen"
             minHeight="screen"
             display={{
-                base: 'none',
-                xl: 'flex'
+                base: "none",
+                xl: "flex",
             }}
             p="90">
             <VStack width="50%">
@@ -67,10 +67,14 @@ export function DesktopEducationView() {
             <VStack
                 width="50%"
                 alignItems="flex-start">
-                <Fade direction="left" triggerOnce>
+                <Fade
+                    direction="left"
+                    triggerOnce>
                     <Heading size="9">Education</Heading>
                 </Fade>
-                <Fade direction="right" triggerOnce>
+                <Fade
+                    direction="right"
+                    triggerOnce>
                     <Heading size="9">History</Heading>
                 </Fade>
                 <Text color="yellow">

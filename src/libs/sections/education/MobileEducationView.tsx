@@ -10,19 +10,22 @@ export function MobileEducationView() {
             width="screen"
             minHeight="screen"
             display={{
-              base: 'flex',
-              xl: 'none',
+                base: "flex",
+                xl: "none",
             }}
-                        py="40px"
+            py="40px"
             p="20px">
-            
             <VStack
                 width="full"
                 alignItems="flex-start">
-                <Fade direction="left" triggerOnce>
+                <Fade
+                    direction="left"
+                    triggerOnce>
                     <Heading size="9">Education</Heading>
                 </Fade>
-                <Fade direction="right" triggerOnce>
+                <Fade
+                    direction="right"
+                    triggerOnce>
                     <Heading size="9">History</Heading>
                 </Fade>
                 <Text color="yellow">
