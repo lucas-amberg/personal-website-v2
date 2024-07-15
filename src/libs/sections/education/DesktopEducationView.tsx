@@ -13,7 +13,7 @@ export function DesktopEducationView() {
             <VStack width="50%">
                 <EducationItem
                     color="black"
-                    degree='B.S. Computer Science'
+                    degree="B.S. Computer Science"
                     timeframe="Nov 2022 - May 2026"
                     width="90%"
                     bg="yellow.8"
@@ -23,14 +23,30 @@ export function DesktopEducationView() {
                     }}
                     heading="California State University, Long Beach"
                     headingSize="8"
-                    gpa='3.794'
-                    honors={[{honor:"Dean's Honors List", terms: ['Fall 2022', 'Spring 2023']}, {honor:"President's Honors List", terms: ['Fall 2023', 'Spring 2024']}]}
-                    relevantCoursework={['Data Structures, Algorithms, Object Oriented Application Development, Discrete Mathematics']}
-                    clubs={['Kappa Sigma Fraternity', 'Google Developer Student Club', 'Association for Computing Machinery', 'AI Research Club']}
+                    gpa="3.794"
+                    honors={[
+                        {
+                            honor: "Dean's Honors List",
+                            terms: ["Fall 2022", "Spring 2023"],
+                        },
+                        {
+                            honor: "President's Honors List",
+                            terms: ["Fall 2023", "Spring 2024"],
+                        },
+                    ]}
+                    relevantCoursework={[
+                        "Data Structures, Algorithms, Object Oriented Application Development, Discrete Mathematics",
+                    ]}
+                    clubs={[
+                        "Kappa Sigma Fraternity",
+                        "Google Developer Student Club",
+                        "Association for Computing Machinery",
+                        "AI Research Club",
+                    ]}
                 />
                 <EducationItem
                     color="white"
-                    degree='B.S. (Hons) Computer Science'
+                    degree="B.S. (Hons) Computer Science"
                     timeframe="Aug 2024 - Jan 2025"
                     width="90%"
                     bg="purple.8"
@@ -40,8 +56,8 @@ export function DesktopEducationView() {
                     }}
                     heading="University of Hertfordshire"
                     headingSize="8"
-                    relevantCoursework={['Database Fundamentals']}
-                    description='I will be fortunate enough to be studying abroad at the University of Hertfordshire in Hatfield, England, UK for this upcoming semester.'
+                    relevantCoursework={["Database Fundamentals"]}
+                    description="I will be fortunate enough to be studying abroad at the University of Hertfordshire in Hatfield, England, UK for this upcoming semester."
                 />
             </VStack>
             <VStack

@@ -55,21 +55,57 @@ export function EducationItem({
                     height={60}
                 />
             </VStack>
-            <VStack gap='0' width='85%' alignItems="flex-start">
+            <VStack
+                gap="0"
+                width="85%"
+                alignItems="flex-start">
                 <Heading size={headingSize || "8"}>{heading}</Heading>
-                {degree && <Text weight='bold'>{degree}</Text>}
+                {degree && <Text weight="bold">{degree}</Text>}
                 <Text weight={"bold"}>{timeframe}</Text>
-                {gpa && <Text><span style={{fontWeight: 'bold'}}>GPA</span>: {gpa}</Text>}
-                {honors && honors.map((honor, index) => {
-                    return(
-                        <Text><span style={{fontWeight: 'bold'}}>{honor.honor}</span>{honor.terms && ': ' + honor.terms.map((term, index) => {
-                            return index + 1 === honor.terms!.length ? ' ' + term : term })}
-                             </Text>
-                    )
-                })}
-                {relevantCoursework && <Text><span style={{fontWeight: 'bold'}}>Relevant Coursework</span>: {relevantCoursework.map(course => course)}</Text> }
-                {clubs && <Text><span style={{fontWeight: 'bold'}}>Clubs and Societies</span>: {clubs.map((club, index) => {
-                            return index + 1 ===    clubs.length ? club : club + ', ' })}</Text>}
+                {gpa && (
+                    <Text>
+                        <span style={{ fontWeight: "bold" }}>GPA</span>: {gpa}
+                    </Text>
+                )}
+                {honors &&
+                    honors.map((honor, index) => {
+                        return (
+                            <Text>
+                                <span style={{ fontWeight: "bold" }}>
+                                    {honor.honor}
+                                </span>
+                                {honor.terms &&
+                                    ": " +
+                                        honor.terms.map((term, index) => {
+                                            return index + 1 ===
+                                                honor.terms!.length
+                                                ? " " + term
+                                                : term;
+                                        })}
+                            </Text>
+                        );
+                    })}
+                {relevantCoursework && (
+                    <Text>
+                        <span style={{ fontWeight: "bold" }}>
+                            Relevant Coursework
+                        </span>
+                        : {relevantCoursework.map((course) => course)}
+                    </Text>
+                )}
+                {clubs && (
+                    <Text>
+                        <span style={{ fontWeight: "bold" }}>
+                            Clubs and Societies
+                        </span>
+                        :{" "}
+                        {clubs.map((club, index) => {
+                            return index + 1 === clubs.length
+                                ? club
+                                : club + ", ";
+                        })}
+                    </Text>
+                )}
                 {description && <Text>{description}</Text>}
             </VStack>
         </HStack>
