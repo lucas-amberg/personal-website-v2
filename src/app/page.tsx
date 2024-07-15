@@ -2,6 +2,7 @@ import Image from "next/image";
 import { VStack } from "panda";
 import { AboutMe } from "@/libs/sections/about-me/AboutMe";
 import { Skills } from "@/libs/sections/skills/Skills";
+import { Education } from "@/libs/sections/education/Education";
 
 export default function Home() {
     return (
@@ -20,6 +21,7 @@ export default function Home() {
             height="full">
             <AboutMe />
             <Skills />
+            <Education />
             <VStack height="800vh"></VStack>
         </VStack>
     );
