@@ -3,6 +3,7 @@ import { VStack } from "panda";
 import { AboutMe } from "@/libs/sections/about-me/AboutMe";
 import { Skills } from "@/libs/sections/skills/Skills";
 import { Education } from "@/libs/sections/education/Education";
+import { WorkExperience } from "@/libs/sections/work-experience/WorkExperience";
 
 export default function Home() {
     return (
@@ -22,6 +23,7 @@ export default function Home() {
             <AboutMe />
             <Skills />
             <Education />
+            <WorkExperience />
             <VStack height="800vh"></VStack>
         </VStack>
     );

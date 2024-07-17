@@ -24,8 +24,8 @@ This is mostly for myself to reference as I complete the site, just to have a go
 -   [x] Create a skills section ([#6](https://github.com/lucas-amberg/personal-website-v2/issues/6)) ([#15](https://github.com/lucas-amberg/personal-website-v2/pull/15))
 -   [x] Create an education section ([#7](https://github.com/lucas-amberg/personal-website-v2/issues/7)) ([#16](https://github.com/lucas-amberg/personal-website-v2/pull/16))
     -   [x] Create a component for education items
--   [ ] Create a work experience section ([#8](https://github.com/lucas-amberg/personal-website-v2/issues/8))
-    -   [ ] Create a component for work experience items
+-   [x] Create a work experience section ([#8](https://github.com/lucas-amberg/personal-website-v2/issues/8)) ([#17](https://github.com/lucas-amberg/personal-website-v2/pull/17))
+    -   [x] Create a component for work experience items
 -   [ ] Create a projects section ([#9](https://github.com/lucas-amberg/personal-website-v2/issues/9))
     -   [ ] Create a component for projects
 -   [ ] Create an open source section ([#10](https://github.com/lucas-amberg/personal-website-v2/issues/10))
