@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Heading, Text } from "@radix-ui/themes";
 import { Fade } from "react-awesome-reveal";
 import { token } from "ss/tokens";
-import { DesktopWorkExperienceView } from "./DesktopWorkExperienceView";
+import { WorkExperienceView } from "./WorkExperienceView";
 
 export function WorkExperience() {
     return (
@@ -13,7 +13,7 @@ export function WorkExperience() {
                 padding="0"
                 overflow="hidden"
                 position="relative">
-                <DesktopWorkExperienceView />
+                <WorkExperienceView />
             </Box>
         </>
     );
