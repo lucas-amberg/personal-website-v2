@@ -41,7 +41,7 @@ export function WorkExperienceItem({
                 height="100%">
                 <Image
                     style={{
-                      borderRadius: '10px'
+                        borderRadius: "10px",
                     }}
                     src={image.src}
                     alt={image.alt}
@@ -56,8 +56,16 @@ export function WorkExperienceItem({
                 <Heading size={headingSize || "8"}>{heading}</Heading>
                 {companyName && <Text weight="bold">{companyName}</Text>}
                 <Text weight={"bold"}>{timeframe}</Text>
-                {description && <Text size='2'>{description}</Text>}
-                {achievements && <VStack>{achievements.map((achievement, index) => <HStack alignItems='flex-start'>• <Text size='2' >{achievement}</Text></HStack>)}</VStack>}
+                {description && <Text size="2">{description}</Text>}
+                {achievements && (
+                    <VStack>
+                        {achievements.map((achievement, index) => (
+                            <HStack alignItems="flex-start">
+                                • <Text size="2">{achievement}</Text>
+                            </HStack>
+                        ))}
+                    </VStack>
+                )}
             </VStack>
         </HStack>
     );
