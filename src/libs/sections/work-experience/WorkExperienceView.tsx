@@ -25,43 +25,46 @@ export function WorkExperienceView() {
                     xl: "center",
                 }}
                 textAlign={{ base: "right", xl: "center" }}>
-                <VStack display={{
-                  base: 'none', xl: 'flex'
-                }}>
-                  <Heading size="9">
-                      <Fade
-                          cascade
-                          damping={0.2}
-                          triggerOnce
-                          direction="top-left">
-                          Work Experience
-                      </Fade>
-                  </Heading>
+                <VStack
+                    display={{
+                        base: "none",
+                        xl: "flex",
+                    }}>
+                    <Heading size="9">
+                        <Fade
+                            cascade
+                            damping={0.2}
+                            triggerOnce
+                            direction="top-left">
+                            Work Experience
+                        </Fade>
+                    </Heading>
                 </VStack>
-                <VStack display={{
-                  base: 'flex', xl: 'none'
-                }}
-                alignItems='flex-end'
-                >
-                  <Heading size="9">
-                      <Fade
-                          cascade
-                          damping={0.2}
-                          triggerOnce
-                          direction="top-left">
-                          Work
-                      </Fade>
-                  </Heading>
-                  <Heading size="9">
-                      <Fade
-                          cascade
-                          damping={0.2}
-                          delay={800}
-                          triggerOnce
-                          direction="top-left">
-                          Experience
-                      </Fade>
-                  </Heading>
+                <VStack
+                    display={{
+                        base: "flex",
+                        xl: "none",
+                    }}
+                    alignItems="flex-end">
+                    <Heading size="9">
+                        <Fade
+                            cascade
+                            damping={0.2}
+                            triggerOnce
+                            direction="top-left">
+                            Work
+                        </Fade>
+                    </Heading>
+                    <Heading size="9">
+                        <Fade
+                            cascade
+                            damping={0.2}
+                            delay={800}
+                            triggerOnce
+                            direction="top-left">
+                            Experience
+                        </Fade>
+                    </Heading>
                 </VStack>
                 <Text size="4">
                     My most valuable time spent on my learning journey has been
