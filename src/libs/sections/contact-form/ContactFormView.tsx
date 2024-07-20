@@ -1,10 +1,15 @@
 import { VStack, HStack } from "panda";
-import { Heading, Text } from "@radix-ui/themes";
+import { Heading, Text, TextArea, TextField } from "@radix-ui/themes";
 import { Fade, Rotate } from "react-awesome-reveal";
 import Image from "next/image";
 import { token } from "ss/tokens";
 import { ContactItem } from "@/libs/ui/contact-form/ContactItem";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
+import {
+    PhoneIcon,
+    UserIcon,
+    EnvelopeIcon as EnvelopeIconOutline,
+} from "@heroicons/react/24/outline";
 
 export function ContactFormView() {
     return (
@@ -20,8 +25,8 @@ export function ContactFormView() {
                 lg: "90px",
             }}
             flexDirection={{
-                base: "row",
-                lg: "column",
+                base: "column",
+                lg: "row",
             }}
             justifyContent={{
                 base: "center",
@@ -82,6 +87,91 @@ export function ContactFormView() {
                     image={{ src: "/logos/linkedin.svg", alt: "LinkedIn" }}
                     href="https://linkedin.com/in/lucasamberg"
                 />
+            </VStack>
+            <VStack
+                width={{
+                    base: "100%",
+                    lg: "50%",
+                }}
+                height="100%"
+                alignItems="center"
+                justifyContent="center">
+                <VStack
+                    alignItems="flex-start"
+                    gap="12">
+                    <label htmlFor="name">
+                        <Text>
+                            Name <span style={{ color: "red" }}>*</span>
+                        </Text>
+                        <TextField.Root
+                            required
+                            id="name"
+                            type="text"
+                            name="name"
+                            size="3"
+                            variant="classic"
+                            placeholder="John Doe">
+                            <TextField.Slot>
+                                <UserIcon
+                                    width={12}
+                                    height={12}
+                                />
+                            </TextField.Slot>
+                        </TextField.Root>
+                    </label>
+                    <label htmlFor="email">
+                        <Text>
+                            Email <span style={{ color: "red" }}>*</span>
+                        </Text>
+                        <TextField.Root
+                            required
+                            id="email"
+                            type="email"
+                            name="email"
+                            size="3"
+                            variant="classic"
+                            placeholder="john.doe@example.com">
+                            <TextField.Slot>
+                                <EnvelopeIconOutline
+                                    width={12}
+                                    height={12}
+                                />
+                            </TextField.Slot>
+                        </TextField.Root>
+                    </label>
+                    <label htmlFor="phone">
+                        <Text>Phone Number</Text>
+                        <TextField.Root
+                            id="phone"
+                            maxLength={10}
+                            type="number"
+                            name="phone"
+                            size="3"
+                            variant="classic"
+                            placeholder="1234567890">
+                            <TextField.Slot>
+                                <PhoneIcon
+                                    width={12}
+                                    height={12}
+                                />
+                            </TextField.Slot>
+                        </TextField.Root>
+                    </label>
+                    <label htmlFor="reason">
+                        <Text>
+                            Reason for Contacting{" "}
+                            <span style={{ color: "red" }}>*</span>
+                        </Text>
+                        <TextArea
+                            required
+                            id="reason"
+                            resize={"none"}
+                            name="reason"
+                            size="3"
+                            variant="classic"
+                            placeholder="I am reaching out because..."></TextArea>
+                    </label>
+                </VStack>
             </VStack>
         </HStack>
     );
