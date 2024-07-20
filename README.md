@@ -30,9 +30,9 @@ This is mostly for myself to reference as I complete the site, just to have a go
     -   [ ] Create a component for projects
 -   [ ] Create an open source section ([#10](https://github.com/lucas-amberg/personal-website-v2/issues/10))
     -   [ ] Create a component for open source projects
--   [ ] Create a contact me section ([#11](https://github.com/lucas-amberg/personal-website-v2/issues/11))
-    -   [ ] Create a form for contact
-    -   [ ] Create a component for contact form
+-   [x] Create a contact me section ([#11](https://github.com/lucas-amberg/personal-website-v2/issues/11)) ([#18](https://github.com/lucas-amberg/personal-website-v2/pull/18))
+    -   [x] Create a form for contact
+    -   [x] Create a component for contact form
 -   [ ] Nice to Haves _(No issues yet)_
     -   [ ] Create an admin dash
         -   [ ] Implement Authentication
