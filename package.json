@@ -12,6 +12,8 @@
     "prettier:check": "prettier --check \"**/*.{ts,tsx,js,md,mdx,css,yaml}\""
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@heroicons/react": "^2.1.5",
     "@radix-ui/themes": "^3.1.1",
     "autoprefixer": "^10.4.19",
     "next": "14.2.4",

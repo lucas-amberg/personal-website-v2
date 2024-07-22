@@ -4,6 +4,7 @@ import { AboutMe } from "@/libs/sections/about-me/AboutMe";
 import { Skills } from "@/libs/sections/skills/Skills";
 import { Education } from "@/libs/sections/education/Education";
 import { WorkExperience } from "@/libs/sections/work-experience/WorkExperience";
+import { ContactForm } from "@/libs/sections/contact-form/ContactForm";
 
 export default function Home() {
     return (
@@ -24,7 +25,12 @@ export default function Home() {
             <Skills />
             <Education />
             <WorkExperience />
-            <VStack height="800vh"></VStack>
+            <ContactForm />
+            {process.env.NODE_ENV === "development" && (
+                <VStack height="800vh">
+                    {/* this is for testing screen height and scrolling things */}
+                </VStack>
+            )}
         </VStack>
     );
 }
