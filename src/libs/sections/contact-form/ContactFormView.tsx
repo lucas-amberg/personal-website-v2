@@ -88,8 +88,8 @@ export function ContactFormView() {
                     using my email, or other social media/contact info below.
                 </Text>
                 <Text>
-                    Additionally, you may use the contact form to the right to
-                    reach me by email.
+                    Additionally, you may use the contact form in this section
+                    to reach me by email.
                 </Text>
                 <ContactItem
                     backgroundColor="green.8"
