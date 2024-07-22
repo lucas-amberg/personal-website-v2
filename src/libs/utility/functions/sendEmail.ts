@@ -9,7 +9,7 @@ export const sendEmail = async (form: RefObject<HTMLFormElement>) => {
             error: true,
         };
     }
-    console.log(form.current)
+    console.log(form.current);
     return await emailjs
         .sendForm(
             process.env.NEXT_PUBLIC_SERVICE_ID_EMAIL!,

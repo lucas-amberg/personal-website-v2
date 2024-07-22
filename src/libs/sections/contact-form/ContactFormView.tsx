@@ -1,6 +1,13 @@
 "use client";
 import { VStack, HStack } from "panda";
-import { Heading, Text, TextArea, TextField, Button, Spinner } from "@radix-ui/themes";
+import {
+    Heading,
+    Text,
+    TextArea,
+    TextField,
+    Button,
+    Spinner,
+} from "@radix-ui/themes";
 import { Fade, Rotate } from "react-awesome-reveal";
 import Image from "next/image";
 import { token } from "ss/tokens";
@@ -114,66 +121,66 @@ export function ContactFormView() {
                 height="100%"
                 alignItems="center"
                 justifyContent="center">
-                    <form
-                        className={css({
-                            display: "flex",
-                            paddingY: {
-                                base: '20px',
-                                lg: '0'
-                            },
-                            flexDirection: "column",
-                            gap: "12px",
-                            alignItems: {
-                                base: 'center',
-                                lg: 'flex-end'
-                            },
-                        })}
-                        ref={form}
-                        onSubmit={(e) => {
-                            e.preventDefault();
-                            handleFormSubmit();
-                        }}>
-                        <label htmlFor="user_name">
-                            <Text>
-                                Name <span style={{ color: "red" }}>*</span>
-                            </Text>
-                            <TextField.Root
-                                required
-                                id="user_name"
-                                type="text"
-                                name="user_name"
-                                size="3"
-                                variant="classic"
-                                placeholder="John Doe">
-                                <TextField.Slot>
-                                    <UserIcon
-                                        width={12}
-                                        height={12}
-                                    />
-                                </TextField.Slot>
-                            </TextField.Root>
-                        </label>
-                        <label htmlFor="user_email">
-                            <Text>
-                                Email <span style={{ color: "red" }}>*</span>
-                            </Text>
-                            <TextField.Root
-                                required
-                                id="user_email"
-                                type="email"
-                                name="user_email"
-                                size="3"
-                                variant="classic"
-                                placeholder="john.doe@example.com">
-                                <TextField.Slot>
-                                    <EnvelopeIconOutline
-                                        width={12}
-                                        height={12}
-                                    />
-                                </TextField.Slot>
-                            </TextField.Root>
-                        </label>
-                        <label htmlFor="user_phone">
+                <form
+                    className={css({
+                        display: "flex",
+                        paddingY: {
+                            base: "20px",
+                            lg: "0",
+                        },
+                        flexDirection: "column",
+                        gap: "12px",
+                        alignItems: {
+                            base: "center",
+                            lg: "flex-end",
+                        },
+                    })}
+                    ref={form}
+                    onSubmit={(e) => {
+                        e.preventDefault();
+                        handleFormSubmit();
+                    }}>
+                    <label htmlFor="user_name">
+                        <Text>
+                            Name <span style={{ color: "red" }}>*</span>
+                        </Text>
+                        <TextField.Root
+                            required
+                            id="user_name"
+                            type="text"
+                            name="user_name"
+                            size="3"
+                            variant="classic"
+                            placeholder="John Doe">
+                            <TextField.Slot>
+                                <UserIcon
+                                    width={12}
+                                    height={12}
+                                />
+                            </TextField.Slot>
+                        </TextField.Root>
+                    </label>
+                    <label htmlFor="user_email">
+                        <Text>
+                            Email <span style={{ color: "red" }}>*</span>
+                        </Text>
+                        <TextField.Root
+                            required
+                            id="user_email"
+                            type="email"
+                            name="user_email"
+                            size="3"
+                            variant="classic"
+                            placeholder="john.doe@example.com">
+                            <TextField.Slot>
+                                <EnvelopeIconOutline
+                                    width={12}
+                                    height={12}
+                                />
+                            </TextField.Slot>
+                        </TextField.Root>
+                    </label>
+                    <label htmlFor="user_phone">
                         <Text>Phone Number</Text>
                         <TextField.Root
                             id="user_phone"
@@ -191,40 +198,38 @@ export function ContactFormView() {
                             </TextField.Slot>
                         </TextField.Root>
                     </label>
-                        <label htmlFor="message">
-                            <Text>
-                                Message <span style={{ color: "red" }}>*</span>
-                            </Text>
-                            <TextArea
-                                required
-                                id="message"
-                                resize={"none"}
-                                name="message"
-                                size="3"
-                                variant="classic"
-                                placeholder="I am reaching out because..."></TextArea>
-                        </label>
-                        {message && (
-                            <Text
-                                color={
-                                    message.startsWith("Error")
-                                        ? "red"
-                                        : "green"
-                                }>
-                                {message}
-                            </Text>
-                        )}
-                        <Button
-                            type="submit"
-                            disabled={loading}
-                            size='4'
-                            onClick={(e) => {
-                                e.preventDefault();
-                                handleFormSubmit();
-                            }}>
-                            {loading ? <Spinner size='3' /> : "Send"}
-                        </Button>
-                    </form>
+                    <label htmlFor="message">
+                        <Text>
+                            Message <span style={{ color: "red" }}>*</span>
+                        </Text>
+                        <TextArea
+                            required
+                            id="message"
+                            resize={"none"}
+                            name="message"
+                            size="3"
+                            variant="classic"
+                            placeholder="I am reaching out because..."></TextArea>
+                    </label>
+                    {message && (
+                        <Text
+                            color={
+                                message.startsWith("Error") ? "red" : "green"
+                            }>
+                            {message}
+                        </Text>
+                    )}
+                    <Button
+                        type="submit"
+                        disabled={loading}
+                        size="4"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            handleFormSubmit();
+                        }}>
+                        {loading ? <Spinner size="3" /> : "Send"}
+                    </Button>
+                </form>
             </VStack>
         </HStack>
     );

@@ -26,7 +26,11 @@ export default function Home() {
             <Education />
             <WorkExperience />
             <ContactForm />
-            <VStack height="800vh"></VStack>
+            {process.env.NODE_ENV === "development" && (
+                <VStack height="800vh">
+                    {/* this is for testing screen height and scrolling things */}
+                </VStack>
+            )}
         </VStack>
     );
 }
