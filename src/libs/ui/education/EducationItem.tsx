@@ -70,7 +70,7 @@ export function EducationItem({
                 {honors &&
                     honors.map((honor, index) => {
                         return (
-                            <Text>
+                            <Text key={honor + "-" + index}>
                                 <span style={{ fontWeight: "bold" }}>
                                     {honor.honor}
                                 </span>

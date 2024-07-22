@@ -60,7 +60,9 @@ export function WorkExperienceItem({
                 {achievements && (
                     <VStack>
                         {achievements.map((achievement, index) => (
-                            <HStack alignItems="flex-start">
+                            <HStack
+                                key={achievement + "-" + index}
+                                alignItems="flex-start">
                                 • <Text size="2">{achievement}</Text>
                             </HStack>
                         ))}
