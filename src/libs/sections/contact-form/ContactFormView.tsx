@@ -123,17 +123,20 @@ export function ContactFormView() {
                 justifyContent="center">
                 <form
                     className={css({
-                        display: "flex",
                         paddingY: {
                             base: "20px",
                             lg: "0",
                         },
-                        flexDirection: "column",
                         gap: "12px",
-                        alignItems: {
+                        justifyContent: {
                             base: "center",
                             lg: "flex-end",
                         },
+                        height: "100%",
+                        width: "100%",
+                        alignItems: "center",
+                        display: "grid",
+                        gridTemplateRows: "1fr 1fr 1fr 2fr 1fr",
                     })}
                     ref={form}
                     onSubmit={(e) => {
