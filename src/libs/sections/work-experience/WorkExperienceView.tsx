@@ -21,10 +21,10 @@ export function WorkExperienceView() {
             bg="gray.12">
             <VStack
                 alignItems={{
-                    base: "flex-end",
+                    base: "flex-start",
                     xl: "center",
                 }}
-                textAlign={{ base: "right", xl: "center" }}>
+                textAlign={{ base: "left", xl: "center" }}>
                 <VStack
                     display={{
                         base: "none",
@@ -45,26 +45,17 @@ export function WorkExperienceView() {
                         base: "flex",
                         xl: "none",
                     }}
-                    alignItems="flex-end">
-                    <Heading size="9">
-                        <Fade
-                            cascade
-                            damping={0.2}
-                            triggerOnce
-                            direction="top-left">
-                            Work
-                        </Fade>
-                    </Heading>
-                    <Heading size="9">
-                        <Fade
-                            cascade
-                            damping={0.2}
-                            delay={800}
-                            triggerOnce
-                            direction="top-left">
-                            Experience
-                        </Fade>
-                    </Heading>
+                    alignItems="flex-start">
+                    <Fade
+                        direction="left"
+                        triggerOnce>
+                        <Heading size="9">Work</Heading>
+                    </Fade>
+                    <Fade
+                        direction="right"
+                        triggerOnce>
+                        <Heading size="9">Experience</Heading>
+                    </Fade>
                 </VStack>
                 <Text size="4">
                     My most valuable time spent on my learning journey has been
@@ -157,7 +148,6 @@ export function WorkExperienceView() {
                     achievements={[
                         "Developing frontend with Next.js and Panda CSS, backend with TypeScript and Neo4j, and cloud infrastructure with AWS and Pulumi.",
                         "Implemented live messaging with file uploads using AWS S3, Liveblocks, and Next.js along with Panda CSS and Park UI for clean and consistent styling.",
-                        "Designed a multi purpose web scraper CLI using Puppeteer, Ink (React), and OpenAI (4o/Vision) to collect seed data for website, adding over 2000 jobs.",
                         "Scrumming with team of 10+ developers 2-3 times weekly using Figma, Jira, Miro, Notion, and other collaboration tools to visualize concepts and plan kanban or sprints.",
                     ]}
                 />

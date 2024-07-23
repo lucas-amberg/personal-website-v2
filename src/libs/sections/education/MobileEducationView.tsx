@@ -40,14 +40,14 @@ export function MobileEducationView() {
                         Computer Science
                     </span>{" "}
                     major, my studies are largely focused on mathematics and
-                    Computer Science theory.
+                    Computer Science Theory.
                 </Text>
                 <Text>
                     My web development journey is mostly{" "}
                     <span style={{ color: token("colors.purple.9") }}>
                         independent
                     </span>{" "}
-                    of my studies at my University, which is more focused on
+                    of my studies at my university, which is more focused on
                     core Computer Science concepts such as Discrete Mathematics,
                     Data Structures, and Algorithms.
                 </Text>
