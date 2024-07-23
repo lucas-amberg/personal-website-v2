@@ -38,8 +38,8 @@ This is mostly for myself to reference as I complete the site, just to have a go
     -   [x] Create a component for work experience items
 -   [x] Create a projects section ([#9](https://github.com/lucas-amberg/personal-website-v2/issues/9)) ([#20](https://github.com/lucas-amberg/personal-website-v2/pull/20))
     -   [x] Create a component for projects
--   [ ] Create an open source section ([#10](https://github.com/lucas-amberg/personal-website-v2/issues/10))
-    -   [ ] Create a component for open source projects
+-   [x] Create an open source section ([#10](https://github.com/lucas-amberg/personal-website-v2/issues/10)) ([#21](https://github.com/lucas-amberg/personal-website-v2/pull/21))
+    -   [x] Create a component for open source projects
 -   [x] Create a contact me section ([#11](https://github.com/lucas-amberg/personal-website-v2/issues/11)) ([#18](https://github.com/lucas-amberg/personal-website-v2/pull/18))
     -   [x] Create a form for contact
     -   [x] Create a component for contact form

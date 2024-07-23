@@ -5,6 +5,7 @@ import {
     Skeleton,
     Separator,
     IconButton,
+    Avatar,
 } from "@radix-ui/themes";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,7 +15,7 @@ import { Suspense } from "react";
 import { css } from "ss/css";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 
-interface ProjectItemProps {
+interface OpenSourceItemProps {
     title: string;
     href?: string;
     repo?: string;
@@ -22,14 +23,13 @@ interface ProjectItemProps {
     endDate?: string;
     skills?: string[];
     description?: string;
-    images: {
-        src: string;
-        alt: string;
-    }[];
+    image: string;
     tasks?: string[];
+    prs?: string;
+    titleSize?: "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9";
 }
 
-export default function ProjectItem({
+export default function OpenSourceItem({
     title,
     href,
     repo,
@@ -37,9 +37,11 @@ export default function ProjectItem({
     endDate,
     skills,
     description,
-    images,
+    image,
     tasks,
-}: ProjectItemProps) {
+    titleSize,
+    prs,
+}: OpenSourceItemProps) {
     return (
         <Dialog.Root>
             <Dialog.Trigger>
@@ -53,35 +55,31 @@ export default function ProjectItem({
                         base: "screen",
                         md: "auto",
                     }}
-                    alignItems={{
-                        base: "flex-start",
-                        xl: "center",
-                    }}>
+                    flexDirection={{
+                        base: "row",
+                        xl: "column",
+                    }}
+                    alignItems="center">
                     <Suspense
                         fallback={
                             <Skeleton>
-                                <Image
-                                    style={{
-                                        borderRadius: "16px",
-                                    }}
-                                    src={images[0].src}
-                                    alt={images[0].alt}
-                                    width={250}
-                                    height={141}
+                                <Avatar
+                                    size="8"
+                                    src={image}
+                                    alt={title}
+                                    fallback={title.slice(0, 1).toUpperCase()}
                                 />
                             </Skeleton>
                         }>
-                        <Image
-                            style={{
-                                borderRadius: "16px",
-                            }}
-                            src={images[0].src}
-                            alt={images[0].alt}
-                            width={250}
-                            height={141}
+                        <Avatar
+                            src={image}
+                            size="8"
+                            alt={title}
+                            fallback={title.slice(0, 1).toUpperCase()}
                         />
                     </Suspense>
                     <Heading
+                        size={titleSize || "6"}
                         className={css({
                             _hover: {
                                 color: "blue.8",
@@ -98,21 +96,14 @@ export default function ProjectItem({
                 <VStack
                     alignItems="flex-start"
                     width="full">
-                    <HStack flexWrap="wrap">
-                        {images.map((image, index) => (
-                            <Image
-                                style={{
-                                    borderRadius: "16px",
-                                }}
-                                key={"image-" + index + 923982392}
-                                src={image.src}
-                                alt={image.alt}
-                                width={250}
-                                height={141}
-                            />
-                        ))}
+                    <HStack>
+                        <Avatar
+                            src={image}
+                            alt={title}
+                            fallback={title.slice(0, 1).toUpperCase()}
+                        />
+                        <Dialog.Title size="7">{title}</Dialog.Title>
                     </HStack>
-                    <Dialog.Title size="7">{title}</Dialog.Title>
                     {description && (
                         <Dialog.Description>{description}</Dialog.Description>
                     )}
@@ -167,10 +158,26 @@ export default function ProjectItem({
                             </Link>
                         )}
                     </Text>
+                    <Text>
+                        <strong>PRs: </strong>
+                        {!prs ? (
+                            <em>No Public PRs Available</em>
+                        ) : (
+                            <Link
+                                style={{
+                                    color: token("colors.blue.10"),
+                                    textDecoration: "underline",
+                                }}
+                                href={prs}
+                                target="_blank">
+                                View PRs
+                            </Link>
+                        )}
+                    </Text>
                     {tasks && (
                         <VStack alignItems="flex-start">
                             <Separator size="4" />
-                            <Text weight="bold">About the Project</Text>
+                            <Text weight="bold">About my Contributions</Text>
                             <ul>
                                 {tasks.map((task, index) => {
                                     return (
