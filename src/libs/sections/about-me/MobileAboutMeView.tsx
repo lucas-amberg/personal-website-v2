@@ -1,14 +1,16 @@
 "use client";
 import { HStack, VStack, Box } from "panda";
 import Image from "next/image";
-import { Heading, Text } from "@radix-ui/themes";
+import { Heading, Text, Button } from "@radix-ui/themes";
 import { Fade } from "react-awesome-reveal";
 import { token } from "ss/tokens";
 import { css } from "ss/css";
+import Link from "next/link";
+import { DocumentTextIcon } from "@heroicons/react/24/solid";
 
 export function MobileAboutMeView() {
     return (
-        <HStack
+        <VStack
             width="98%"
             justifyContent="space-evenly"
             position="relative"
@@ -94,6 +96,17 @@ export function MobileAboutMeView() {
                     alt="Lucas Amberg"
                 />
             </Fade>
-        </HStack>
+            <Link
+                href="/Lucas_Amberg_Resume.pdf"
+                target="_blank">
+                <Button size="4">
+                    <DocumentTextIcon
+                        width="24"
+                        height="24"
+                    />{" "}
+                    View Resume
+                </Button>
+            </Link>
+        </VStack>
     );
 }
