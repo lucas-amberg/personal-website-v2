@@ -1,10 +1,18 @@
-import { Dialog, Heading, Text, Skeleton } from "@radix-ui/themes";
+import {
+    Dialog,
+    Heading,
+    Text,
+    Skeleton,
+    Separator,
+    IconButton,
+} from "@radix-ui/themes";
 import Image from "next/image";
 import Link from "next/link";
 import { VStack, HStack } from "ss/jsx";
 import { token } from "ss/tokens";
 import { Suspense } from "react";
 import { css } from "ss/css";
+import { XMarkIcon } from "@heroicons/react/24/solid";
 
 interface ProjectItemProps {
     title: string;
@@ -18,6 +26,7 @@ interface ProjectItemProps {
         src: string;
         alt: string;
     }[];
+    tasks?: string[];
 }
 
 export default function ProjectItem({
@@ -29,11 +38,25 @@ export default function ProjectItem({
     skills,
     description,
     images,
+    tasks,
 }: ProjectItemProps) {
     return (
         <Dialog.Root>
             <Dialog.Trigger>
-                <VStack cursor="pointer">
+                <VStack
+                    cursor="pointer"
+                    px={{
+                        base: "20",
+                        md: "0",
+                    }}
+                    width={{
+                        base: "screen",
+                        md: "auto",
+                    }}
+                    alignItems={{
+                        base: "flex-start",
+                        xl: "center",
+                    }}>
                     <Suspense
                         fallback={
                             <Skeleton>
@@ -68,13 +91,19 @@ export default function ProjectItem({
                     </Heading>
                 </VStack>
             </Dialog.Trigger>
-            <Dialog.Content>
+            <Dialog.Content
+                style={{
+                    position: "relative",
+                }}>
                 <VStack
                     alignItems="flex-start"
                     width="full">
                     <HStack flexWrap="wrap">
                         {images.map((image, index) => (
                             <Image
+                                style={{
+                                    borderRadius: "16px",
+                                }}
                                 key={"image-" + index + 923982392}
                                 src={image.src}
                                 alt={image.alt}
@@ -83,8 +112,10 @@ export default function ProjectItem({
                             />
                         ))}
                     </HStack>
-                    <Heading size="7">{title}</Heading>
-                    {description && <Text>{description}</Text>}
+                    <Dialog.Title size="7">{title}</Dialog.Title>
+                    {description && (
+                        <Dialog.Description>{description}</Dialog.Description>
+                    )}
                     {startDate && (
                         <Text>
                             {!endDate
@@ -136,7 +167,43 @@ export default function ProjectItem({
                             </Link>
                         )}
                     </Text>
+                    {tasks && (
+                        <VStack alignItems="flex-start">
+                            <Separator size="4" />
+                            <Text weight="bold">About the Project</Text>
+                            <ul>
+                                {tasks.map((task, index) => {
+                                    return (
+                                        <li
+                                            style={{
+                                                display: "list-item",
+                                                listStyleType: "disc",
+                                                marginLeft: "1em",
+                                            }}
+                                            key={task + "-" + index}>
+                                            {task}
+                                        </li>
+                                    );
+                                })}
+                            </ul>
+                        </VStack>
+                    )}
                 </VStack>
+                <Dialog.Close
+                    style={{
+                        position: "absolute",
+                        top: "24px",
+                        right: "16px",
+                    }}>
+                    <IconButton
+                        variant="ghost"
+                        color="red">
+                        <XMarkIcon
+                            width={20}
+                            height={20}
+                        />
+                    </IconButton>
+                </Dialog.Close>
             </Dialog.Content>
         </Dialog.Root>
     );
