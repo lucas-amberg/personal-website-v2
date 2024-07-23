@@ -36,8 +36,8 @@ This is mostly for myself to reference as I complete the site, just to have a go
     -   [x] Create a component for education items
 -   [x] Create a work experience section ([#8](https://github.com/lucas-amberg/personal-website-v2/issues/8)) ([#17](https://github.com/lucas-amberg/personal-website-v2/pull/17))
     -   [x] Create a component for work experience items
--   [ ] Create a projects section ([#9](https://github.com/lucas-amberg/personal-website-v2/issues/9))
-    -   [ ] Create a component for projects
+-   [x] Create a projects section ([#9](https://github.com/lucas-amberg/personal-website-v2/issues/9)) ([#20](https://github.com/lucas-amberg/personal-website-v2/pull/20))
+    -   [x] Create a component for projects
 -   [ ] Create an open source section ([#10](https://github.com/lucas-amberg/personal-website-v2/issues/10))
     -   [ ] Create a component for open source projects
 -   [x] Create a contact me section ([#11](https://github.com/lucas-amberg/personal-website-v2/issues/11)) ([#18](https://github.com/lucas-amberg/personal-website-v2/pull/18))

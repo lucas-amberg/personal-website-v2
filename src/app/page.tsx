@@ -5,6 +5,7 @@ import { Skills } from "@/libs/sections/skills/Skills";
 import { Education } from "@/libs/sections/education/Education";
 import { WorkExperience } from "@/libs/sections/work-experience/WorkExperience";
 import { ContactForm } from "@/libs/sections/contact-form/ContactForm";
+import { ProjectsView } from "@/libs/sections/projects/ProjectsView";
 
 export default function Home() {
     return (
@@ -25,6 +26,7 @@ export default function Home() {
             <Skills />
             <Education />
             <WorkExperience />
+            <ProjectsView />
             <ContactForm />
             {process.env.NODE_ENV === "development" && (
                 <VStack height="800vh">
