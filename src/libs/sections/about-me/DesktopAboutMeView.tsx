@@ -1,21 +1,24 @@
 "use client";
 import { HStack, VStack } from "panda";
 import Image from "next/image";
-import { Heading, Text } from "@radix-ui/themes";
+import { Button, Heading, Text } from "@radix-ui/themes";
 import { Fade } from "react-awesome-reveal";
 import { token } from "ss/tokens";
 import { css } from "ss/css";
+import Link from "next/link";
+import { DocumentTextIcon } from "@heroicons/react/24/solid";
 
 export function DesktopAboutMeView() {
     return (
-        <HStack
+        <VStack
             width="100%"
-            justifyContent="flex-start"
+            justifyContent="center"
             display={{
                 base: "none",
                 lg: "flex",
             }}
             position="relative"
+            alignItems="flex-start"
             height="min(100dvh, 100vh)">
             <VStack
                 alignItems="start"
@@ -91,6 +94,17 @@ export function DesktopAboutMeView() {
                     alt="Lucas Amberg"
                 />
             </Fade>
-        </HStack>
+            <Link
+                href="/Lucas_Amberg_Resume.pdf"
+                target="_blank">
+                <Button size="4">
+                    <DocumentTextIcon
+                        width="24"
+                        height="24"
+                    />{" "}
+                    View Resume
+                </Button>
+            </Link>
+        </VStack>
     );
 }

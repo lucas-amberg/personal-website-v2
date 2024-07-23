@@ -30,7 +30,7 @@ This is mostly for myself to reference as I complete the site, just to have a go
 -   [x] Initialize UI libraries ([#1](https://github.com/lucas-amberg/personal-website-v2/pull/1))
 -   [x] Create a README.md with tasks and description ([#2](https://github.com/lucas-amberg/personal-website-v2/pull/2)) ([#12](https://github.com/lucas-amberg/personal-website-v2/pull/12))
 -   [x] Create an about me card ([#3](https://github.com/lucas-amberg/personal-website-v2/issues/3)) ([#13](https://github.com/lucas-amberg/personal-website-v2/pull/13))
--   [ ] Create a link to view my resume (static upload) ([#5](https://github.com/lucas-amberg/personal-website-v2/issues/5))
+-   [x] Create a link to view my resume (static upload) ([#5](https://github.com/lucas-amberg/personal-website-v2/issues/5)) ([#19](https://github.com/lucas-amberg/personal-website-v2/pull/19))
 -   [x] Create a skills section ([#6](https://github.com/lucas-amberg/personal-website-v2/issues/6)) ([#15](https://github.com/lucas-amberg/personal-website-v2/pull/15))
 -   [x] Create an education section ([#7](https://github.com/lucas-amberg/personal-website-v2/issues/7)) ([#16](https://github.com/lucas-amberg/personal-website-v2/pull/16))
     -   [x] Create a component for education items
