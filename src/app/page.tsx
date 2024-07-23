@@ -6,6 +6,7 @@ import { Education } from "@/libs/sections/education/Education";
 import { WorkExperience } from "@/libs/sections/work-experience/WorkExperience";
 import { ContactForm } from "@/libs/sections/contact-form/ContactForm";
 import { ProjectsView } from "@/libs/sections/projects/ProjectsView";
+import { OpenSourceView } from "@/libs/sections/open-source/OpenSourceView";
 
 export default function Home() {
     return (
@@ -27,7 +28,9 @@ export default function Home() {
             <Education />
             <WorkExperience />
             <ProjectsView />
+            <OpenSourceView />
             <ContactForm />
+
             {process.env.NODE_ENV === "development" && (
                 <VStack height="800vh">
                     {/* this is for testing screen height and scrolling things */}
