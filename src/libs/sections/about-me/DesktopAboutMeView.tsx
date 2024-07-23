@@ -1,7 +1,7 @@
 "use client";
 import { HStack, VStack } from "panda";
 import Image from "next/image";
-import { Button, Heading, Text } from "@radix-ui/themes";
+import { Button, Heading, Text, HoverCard } from "@radix-ui/themes";
 import { Fade } from "react-awesome-reveal";
 import { token } from "ss/tokens";
 import { css } from "ss/css";
@@ -94,17 +94,33 @@ export function DesktopAboutMeView() {
                     alt="Lucas Amberg"
                 />
             </Fade>
-            <Link
-                href="/Lucas_Amberg_Resume.pdf"
-                target="_blank">
-                <Button size="4">
-                    <DocumentTextIcon
-                        width="24"
-                        height="24"
-                    />{" "}
-                    View Resume
-                </Button>
-            </Link>
+            <HoverCard.Root>
+                <HoverCard.Trigger>
+                    <Link
+                        href="/Lucas_Amberg_Resume.pdf"
+                        target="_blank">
+                        <Button size="4">
+                            <DocumentTextIcon
+                                width="24"
+                                height="24"
+                            />{" "}
+                            View Resume
+                        </Button>
+                    </Link>
+                </HoverCard.Trigger>
+                <HoverCard.Content>
+                    <Link
+                        href="Lucas_Amberg_Resume.pdf"
+                        target="blank">
+                        <Image
+                            src="/images/Lucas_Amberg_Resume_Screenshot.png"
+                            width={150}
+                            height={196}
+                            alt="Lucas Amberg Resume View"
+                        />
+                    </Link>
+                </HoverCard.Content>
+            </HoverCard.Root>
         </VStack>
     );
 }
