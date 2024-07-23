@@ -1,11 +1,12 @@
 "use client";
 import { HStack, VStack } from "panda";
-import { Heading, Text, HoverCard } from "@radix-ui/themes";
+import { Heading, Text, HoverCard, Avatar } from "@radix-ui/themes";
 import { Fade } from "react-awesome-reveal";
 import { token } from "ss/tokens";
 import { EducationItem } from "@/libs/ui/education/EducationItem";
 import Link from "next/link";
 import Image from "next/image";
+import ProjectItem from "@/libs/ui/projects/ProjectItem";
 
 export function ProjectsView() {
     return (
@@ -73,15 +74,16 @@ export function ProjectsView() {
                                 href="https://github.com/lucas-amberg"
                                 target="_blank">
                                 <HStack>
-                                    <Image
-                                        src="/logos/github.png"
-                                        width={50}
-                                        height={50}
+                                    <Avatar
+                                        src="https://avatars.githubusercontent.com/u/102396588?v=4"
+                                        size="4"
+                                        fallback={"L"}
+                                        radius="full"
                                         alt="GitHub Account"
                                     />
                                     <VStack alignItems="flex-start">
                                         <Heading>lucas-amberg</Heading>{" "}
-                                        <Text>lucas-amberg</Text>
+                                        <Text>GitHub</Text>
                                     </VStack>
                                 </HStack>
                             </Link>
@@ -92,53 +94,22 @@ export function ProjectsView() {
                 </Text>
             </VStack>
             <VStack width="50%">
-                <EducationItem
-                    color="black"
-                    degree="B.S. Computer Science"
-                    timeframe="Nov 2022 - May 2026"
-                    width="90%"
-                    bg="yellow.8"
-                    image={{
-                        src: "/logos/csulb-logo.png",
-                        alt: "California State University, Long Beach Logo",
-                    }}
-                    heading="California State University, Long Beach"
-                    headingSize="8"
-                    gpa="3.794"
-                    honors={[
+                <ProjectItem
+                    images={[
                         {
-                            honor: "Dean's Honors List",
-                            terms: ["Fall 2022", "Spring 2023"],
+                            src: "/projects/green-field-homepage.png",
+                            alt: "Green Field Image 1",
                         },
                         {
-                            honor: "President's Honors List",
-                            terms: ["Fall 2023", "Spring 2024"],
+                            src: "/projects/green-field-menu-item.png",
+                            alt: "Green Field Image 2",
                         },
                     ]}
-                    relevantCoursework={[
-                        "Data Structures, Algorithms, Object Oriented Application Development, Discrete Mathematics",
-                    ]}
-                    clubs={[
-                        "Kappa Sigma Fraternity",
-                        "Google Developer Student Club",
-                        "Association for Computing Machinery",
-                        "AI Research Club",
-                    ]}
-                />
-                <EducationItem
-                    color="white"
-                    degree="B.S. (Hons) Computer Science"
-                    timeframe="Aug 2024 - Jan 2025"
-                    width="90%"
-                    bg="purple.8"
-                    image={{
-                        src: "/logos/uh.jpg",
-                        alt: "University of Hertfordshire Logo",
-                    }}
-                    heading="University of Hertfordshire"
-                    headingSize="8"
-                    relevantCoursework={["Database Fundamentals"]}
-                    description="I will be fortunate enough to be studying abroad at the University of Hertfordshire in Hatfield, England, UK for this upcoming semester."
+                    title="Green Field Churrascaria Website"
+                    description="Creating a contracted website redesign for Green Field Churrascaria, a local restaurant in Long Beach, California."
+                    skills={["Next.js", "TypeScript", "Panda CSS", "Neo4j"]}
+                    startDate="May 2024"
+                    endDate="In Progress"
                 />
             </VStack>
         </HStack>
