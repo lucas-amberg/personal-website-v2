@@ -168,6 +168,36 @@ export function ProjectsView() {
                         ]}
                     />
                 </Fade>
+                <Fade triggerOnce>
+                    <ProjectItem
+                        images={[
+                            {
+                                src: "/projects/pulse-homepage.png",
+                                alt: "Pulse Image 1",
+                            },
+                            {
+                                src: "/projects/pulse-hierarchy.png",
+                                alt: "Pulse Image 2",
+                            },
+                        ]}
+                        title="Pulse CRM"
+                        description="Contract with three other developers working on Pulse, a CRM and project management software for Anova Solar."
+                        skills={[
+                            "Next.js",
+                            "TypeScript",
+                            "Panda CSS",
+                            "Neo4j",
+                            "Supabase",
+                            "Park UI",
+                        ]}
+                        startDate="July 2024"
+                        endDate="In Progress"
+                        tasks={[
+                            "Designed User Hierarchy page using React Flow and Uix to fetch hierarchy data.",
+                            "Developed forgot password email flow using Supabase along with Park UI and Panda CSS for clean styles.",
+                        ]}
+                    />
+                </Fade>
             </VStack>
         </HStack>
     );

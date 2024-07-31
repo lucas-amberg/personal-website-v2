@@ -135,9 +135,9 @@ export function WorkExperienceView() {
                     timeframe="June 2024 - Present"
                     description="As a software engineering intern at Pluto TV, I learned how to participate in scrum with large teams and develop in an agile environment. I also practiced writing scalable software at an industry standard level."
                     achievements={[
-                        "Constructed two POC demos for accessibility in React Native for focus management and keyboard navigation.",
-                        "Developed six library generators and four app generators using Nx, speeding up library and app generation by over 80%",
-                        "Documented and presented my implementation for app and library generators to 200+ team members in 2 presentations.",
+                        "Delivered a presentation on improving React Native apps for screen readers about better focus management and keyboard navigation.",
+                        "Developed six library generators and four app generators with Nx, making library and app generation over 80% faster.",
+                        "Documented and presented my work on app and library generators to 200+ team members in 2 presentations.",
                     ]}
                 />
                 <WorkExperienceItem
@@ -158,9 +158,9 @@ export function WorkExperienceView() {
                     timeframe="Feb 2024 - June 2024"
                     description="As a software engineering intern at Hirebird, I gained experience in a fast paced startup environment and learned several valuable full stack development skills."
                     achievements={[
-                        "Developing frontend with Next.js and Panda CSS, backend with TypeScript and Neo4j, and cloud infrastructure with AWS and Pulumi.",
-                        "Implemented live messaging with file uploads using AWS S3, Liveblocks, and Next.js along with Panda CSS and Park UI for clean and consistent styling.",
-                        "Scrumming with team of 10+ developers 2-3 times weekly using Figma, Jira, Miro, Notion, and other collaboration tools to visualize concepts and plan kanban or sprints.",
+                        "Developed frontend with Next.js and Panda CSS, backend with TypeScript and Neo4j. Built cloud infrastructure with AWS and Pulumi.",
+                        "Implemented live messaging with file uploads. Used AWS S3, Liveblocks, and Next.js. Styled using Panda CSS and Park UI recipes for a clean, consistent style.",
+                        "Scrummed with a team of 10+ developers 2-3 times weekly, used Figma, Jira, Miro, Notion, and other tools to visualize concepts and plan sprints or kanban.",
                     ]}
                 />
                 <WorkExperienceItem
@@ -180,8 +180,8 @@ export function WorkExperienceView() {
                     timeframe="Mar 2023 - May 2024"
                     description="As a student worker at the Port of Los Angeles, I supported the IT team in helping many different departments and divisions with their technology."
                     achievements={[
-                        "Automated Microsoft Office patches across 200+ computers using Visual Basic scripts reducing update times by 80%",
-                        "Streamlined application and computer setup process through the implementation of customized batch files and command line operations, resulting in a 30% reduction in overall setup time.",
+                        "Automated Microsoft Office patches on 200+ computers with Visual Basic scripts, which cut update times by 80%.",
+                        "Streamlined app and computer setup with custom batch files and command line operations, which cut setup time by 30%.",
                     ]}
                 />
             </HStack>
