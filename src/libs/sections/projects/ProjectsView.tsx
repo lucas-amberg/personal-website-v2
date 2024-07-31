@@ -30,7 +30,11 @@ export function ProjectsView() {
                 <Fade
                     direction="down"
                     triggerOnce>
-                    <Heading size="9">Projects</Heading>
+                    <Heading
+                        as="h3"
+                        size="9">
+                        Projects
+                    </Heading>
                 </Fade>
                 <Text>
                     Aside from work experiences, personal projects are an
@@ -88,7 +92,7 @@ export function ProjectsView() {
                                         alt="GitHub Account"
                                     />
                                     <VStack alignItems="flex-start">
-                                        <Heading>lucas-amberg</Heading>{" "}
+                                        <Heading as="h3">lucas-amberg</Heading>{" "}
                                         <Text>GitHub</Text>
                                     </VStack>
                                 </HStack>

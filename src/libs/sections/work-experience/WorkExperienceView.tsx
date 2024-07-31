@@ -30,7 +30,9 @@ export function WorkExperienceView() {
                         base: "none",
                         xl: "flex",
                     }}>
-                    <Heading size="9">
+                    <Heading
+                        as="h3"
+                        size="9">
                         <Fade
                             cascade
                             damping={0.2}
@@ -49,12 +51,20 @@ export function WorkExperienceView() {
                     <Fade
                         direction="left"
                         triggerOnce>
-                        <Heading size="9">Work</Heading>
+                        <Heading
+                            as="h3"
+                            size="9">
+                            Work
+                        </Heading>
                     </Fade>
                     <Fade
                         direction="right"
                         triggerOnce>
-                        <Heading size="9">Experience</Heading>
+                        <Heading
+                            as="h3"
+                            size="9">
+                            Experience
+                        </Heading>
                     </Fade>
                 </VStack>
                 <Text size="4">
@@ -89,30 +99,32 @@ export function WorkExperienceView() {
                     </span>{" "}
                     software initiatives, with endless backlog of work to do.
                 </Text>
-                <Heading style={{ color: token("colors.purple.9") }}>
+                <Heading
+                    as="h3"
+                    style={{ color: token("colors.purple.9") }}>
                     "You learn software engineering by engineering software..."
                 </Heading>
             </VStack>
             <HStack
+                display="flex"
                 flexDirection={{
                     base: "column",
                     xl: "row",
                 }}
                 width="100%"
-                height={{
-                    base: "auto",
-                    xl: "screen",
-                }}
+                // Remove the fixed height property
+                // height={{
+                //   base: "auto",
+                //   xl: "85vh",
+                // }}
                 py="20px"
-                alignItems="stretch">
+                alignItems="stretch" // This will make children stretch to fill the container height
+            >
                 <WorkExperienceItem
                     bg="black"
                     color="yellow.7"
-                    height={{
-                        base: "fit-content",
-                        xl: "100%",
-                    }}
                     headingSize="7"
+                    minHeight="100%"
                     image={{ src: "/logos/plutotv.png", alt: "Pluto TV Logo" }}
                     heading="Software Engineering Intern"
                     companyName="Pluto TV"
@@ -131,7 +143,7 @@ export function WorkExperienceView() {
                 <WorkExperienceItem
                     bg="green.12"
                     color="green.7"
-                    height="100%"
+                    minHeight="100%"
                     width={{
                         base: "100%",
                         xl: "1/3",
@@ -153,7 +165,7 @@ export function WorkExperienceView() {
                 />
                 <WorkExperienceItem
                     bg="green.11"
-                    height="100%"
+                    minHeight="100%"
                     headingSize="7"
                     width={{
                         base: "100%",

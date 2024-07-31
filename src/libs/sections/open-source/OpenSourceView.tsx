@@ -15,13 +15,64 @@ export function OpenSourceView() {
             minHeight="screen"
             bg="gray.12"
             flexDirection={{
-                base: "column-reverse",
+                base: "column",
                 xl: "row",
             }}
             p={{
                 base: "20",
                 xl: "90",
             }}>
+            <VStack
+                width={{
+                    base: "full",
+                    xl: "50%",
+                }}
+                textAlign="left"
+                alignItems="flex-start">
+                <Fade
+                    direction="down"
+                    triggerOnce>
+                    <Heading
+                        as="h3"
+                        size="9">
+                        Open Source
+                    </Heading>
+                </Fade>
+                <Text>
+                    As one of the most important qualities of the software
+                    ecosystem, open source contributions are something I love
+                    doing and{" "}
+                    <span style={{ color: token("colors.blue.8") }}>
+                        hope to do more in the future
+                    </span>
+                    .
+                </Text>
+                <Text>
+                    While most fields such as business, retail, and others often
+                    don't co-operate: one of the best qualities of Computer
+                    Science and Software Engineering is the constant
+                </Text>
+                <Text
+                    style={{ color: token("colors.purple.9") }}
+                    size="6"
+                    weight="bold">
+                    collaboration and effort to make technology better for
+                    everyone<span style={{ color: "white" }}>.</span>
+                </Text>
+                <Text>
+                    Which is why I believe the open source initiative, the one
+                    that created Git, Linux, and all of the technology used to
+                    create this website, is the best thing to come out of
+                    Computer Science,
+                </Text>
+                <Text
+                    size="6"
+                    weight="bold"
+                    color="yellow">
+                    and maybe even the world
+                    <span style={{ color: "white" }}>.</span>
+                </Text>
+            </VStack>
             <VStack
                 gap="20"
                 width={{
@@ -77,59 +128,6 @@ export function OpenSourceView() {
                         ]}
                     />
                 </Fade>
-            </VStack>
-            <VStack
-                width={{
-                    base: "full",
-                    xl: "50%",
-                }}
-                textAlign={{
-                    xl: "right",
-                    base: "flex-start",
-                }}
-                alignItems={{
-                    xl: "flex-end",
-                    base: "flex-start",
-                }}>
-                <Fade
-                    direction="down"
-                    triggerOnce>
-                    <Heading size="9">Open Source</Heading>
-                </Fade>
-                <Text>
-                    As one of the most important qualities of the software
-                    ecosystem, open source contributions are something I love
-                    doing and{" "}
-                    <span style={{ color: token("colors.blue.8") }}>
-                        hope to do more in the future
-                    </span>
-                    .
-                </Text>
-                <Text>
-                    While most fields such as business, retail, and others often
-                    don't co-operate: one of the best qualities of Computer
-                    Science and Software Engineering is the constant
-                </Text>
-                <Text
-                    style={{ color: token("colors.purple.9") }}
-                    size="6"
-                    weight="bold">
-                    collaboration and effort to make technology better for
-                    everyone<span style={{ color: "white" }}>.</span>
-                </Text>
-                <Text>
-                    Which is why I believe the open source initiative, the one
-                    that created Git, Linux, and all of the technology used to
-                    create this website, is the best thing to come out of
-                    Computer Science,
-                </Text>
-                <Text
-                    size="6"
-                    weight="bold"
-                    color="yellow">
-                    and maybe even the world
-                    <span style={{ color: "white" }}>.</span>
-                </Text>
             </VStack>
         </HStack>
     );
