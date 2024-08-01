@@ -53,7 +53,11 @@ export function WorkExperienceItem({
                 gap="4"
                 width="85%"
                 alignItems="flex-start">
-                <Heading size={headingSize || "8"}>{heading}</Heading>
+                <Heading
+                    as="h3"
+                    size={headingSize || "8"}>
+                    {heading}
+                </Heading>
                 {companyName && <Text weight="bold">{companyName}</Text>}
                 <Text weight={"bold"}>{timeframe}</Text>
                 {description && <Text size="2">{description}</Text>}

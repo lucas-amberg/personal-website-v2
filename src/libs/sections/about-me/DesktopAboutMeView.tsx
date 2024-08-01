@@ -29,7 +29,11 @@ export function DesktopAboutMeView() {
                 <HStack
                     gap="25"
                     alignItems="flex-end">
-                    <Heading size="8">Lucas Amberg</Heading>
+                    <Heading
+                        as="h1"
+                        size="8">
+                        Lucas Amberg
+                    </Heading>
                     <Image
                         src="/logos/logo.jpg"
                         style={{ borderRadius: "12px" }}
@@ -41,7 +45,9 @@ export function DesktopAboutMeView() {
                 <Text size={{ initial: "5", xl: "6" }}>
                     As an enthusiastic and dedicated
                 </Text>
-                <Heading size="9">
+                <Heading
+                    as="h3"
+                    size="9">
                     <Fade
                         cascade
                         triggerOnce
@@ -54,13 +60,16 @@ export function DesktopAboutMeView() {
                     at
                 </Text>
                 <Heading
+                    as="h3"
                     color="yellow"
                     size="8">
                     California State University, Long Beach
                     <span style={{ color: "white" }}>,</span>
                 </Heading>
                 <Text size={{ initial: "5", xl: "6" }}>I am set to </Text>
-                <Heading size="8">
+                <Heading
+                    as="h3"
+                    size="8">
                     graduate in{" "}
                     <span style={{ color: token("colors.purple.9") }}>
                         May 2026

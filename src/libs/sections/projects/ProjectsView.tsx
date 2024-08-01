@@ -30,7 +30,11 @@ export function ProjectsView() {
                 <Fade
                     direction="down"
                     triggerOnce>
-                    <Heading size="9">Projects</Heading>
+                    <Heading
+                        as="h3"
+                        size="9">
+                        Projects
+                    </Heading>
                 </Fade>
                 <Text>
                     Aside from work experiences, personal projects are an
@@ -88,7 +92,7 @@ export function ProjectsView() {
                                         alt="GitHub Account"
                                     />
                                     <VStack alignItems="flex-start">
-                                        <Heading>lucas-amberg</Heading>{" "}
+                                        <Heading as="h3">lucas-amberg</Heading>{" "}
                                         <Text>GitHub</Text>
                                     </VStack>
                                 </HStack>
@@ -161,6 +165,36 @@ export function ProjectsView() {
                             "Designed authentication system using Uix (Neo4j) and Auth.js, protecting company data from outsiders.",
                             "Developed clean UI using Radix and Panda CSS, making client registration and keeping track of jobs simple for employees and users.",
                             "Implemented a sorting system to keep track of when clients need to be contacted for new jobs, resulting in $1300+ in new sales in under a month.",
+                        ]}
+                    />
+                </Fade>
+                <Fade triggerOnce>
+                    <ProjectItem
+                        images={[
+                            {
+                                src: "/projects/pulse-homepage.png",
+                                alt: "Pulse Image 1",
+                            },
+                            {
+                                src: "/projects/pulse-hierarchy.png",
+                                alt: "Pulse Image 2",
+                            },
+                        ]}
+                        title="Pulse CRM"
+                        description="Contract with three other developers working on Pulse, a CRM and project management software for Anova Solar."
+                        skills={[
+                            "Next.js",
+                            "TypeScript",
+                            "Panda CSS",
+                            "Neo4j",
+                            "Supabase",
+                            "Park UI",
+                        ]}
+                        startDate="July 2024"
+                        endDate="In Progress"
+                        tasks={[
+                            "Designed User Hierarchy page using React Flow and Uix to fetch hierarchy data.",
+                            "Developed forgot password email flow using Supabase along with Park UI and Panda CSS for clean styles.",
                         ]}
                     />
                 </Fade>

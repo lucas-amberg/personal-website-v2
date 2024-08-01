@@ -76,7 +76,11 @@ export function ContactItem({
                     justifyContent="center"
                     px="12px"
                     width={image || Icon ? "85%" : "100%"}>
-                    <Heading size={headingSize || "8"}>{heading}</Heading>
+                    <Heading
+                        as="h3"
+                        size={headingSize || "8"}>
+                        {heading}
+                    </Heading>
                     {subHeading && <Text>{subHeading}</Text>}
                 </VStack>
             </HStack>

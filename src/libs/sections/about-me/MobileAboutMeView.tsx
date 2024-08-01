@@ -29,7 +29,9 @@ export function MobileAboutMeView() {
                 <HStack
                     gap="25"
                     alignItems="flex-end">
-                    <Heading size={{ initial: "6", sm: "8" }}>
+                    <Heading
+                        as="h1"
+                        size={{ initial: "6", sm: "8" }}>
                         Lucas Amberg
                     </Heading>
                     <Image
@@ -43,7 +45,9 @@ export function MobileAboutMeView() {
                 <Text size={{ initial: "3", sm: "5" }}>
                     As an enthusiastic and dedicated
                 </Text>
-                <Heading size={{ initial: "8", sm: "9" }}>
+                <Heading
+                    as="h3"
+                    size={{ initial: "8", sm: "9" }}>
                     <Fade
                         cascade
                         damping={0.1}>
@@ -55,13 +59,16 @@ export function MobileAboutMeView() {
                     at
                 </Text>
                 <Heading
+                    as="h3"
                     color="yellow"
                     size="6">
                     California State University, Long Beach
                     <span style={{ color: "white" }}>,</span>
                 </Heading>
                 <Text size={{ initial: "3", sm: "5" }}>I am set to </Text>
-                <Heading size="6">
+                <Heading
+                    as="h3"
+                    size="6">
                     graduate in{" "}
                     <span style={{ color: token("colors.purple.9") }}>
                         May 2026

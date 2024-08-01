@@ -79,6 +79,7 @@ export default function OpenSourceItem({
                         />
                     </Suspense>
                     <Heading
+                        as="h3"
                         size={titleSize || "6"}
                         className={css({
                             _hover: {

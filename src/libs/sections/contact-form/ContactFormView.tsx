@@ -67,7 +67,11 @@ export function ContactFormView() {
                 <Fade
                     triggerOnce
                     direction="up">
-                    <Heading size={"9"}>Contact Me</Heading>
+                    <Heading
+                        as="h3"
+                        size={"9"}>
+                        Contact Me
+                    </Heading>
                 </Fade>
                 <Text>
                     I am always open to conversations about tech, project

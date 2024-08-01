@@ -21,12 +21,20 @@ export function MobileEducationView() {
                 <Fade
                     direction="left"
                     triggerOnce>
-                    <Heading size="9">Education</Heading>
+                    <Heading
+                        as="h3"
+                        size="9">
+                        Education
+                    </Heading>
                 </Fade>
                 <Fade
                     direction="right"
                     triggerOnce>
-                    <Heading size="9">History</Heading>
+                    <Heading
+                        as="h3"
+                        size="9">
+                        History
+                    </Heading>
                 </Fade>
                 <Text color="yellow">
                     <span style={{ color: "white" }}>

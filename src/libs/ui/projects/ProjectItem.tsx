@@ -53,10 +53,8 @@ export default function ProjectItem({
                         base: "screen",
                         md: "auto",
                     }}
-                    alignItems={{
-                        base: "flex-start",
-                        xl: "center",
-                    }}>
+                    alignItems="center"
+                    textAlign="center">
                     <Suspense
                         fallback={
                             <Skeleton>
@@ -82,6 +80,7 @@ export default function ProjectItem({
                         />
                     </Suspense>
                     <Heading
+                        as="h3"
                         className={css({
                             _hover: {
                                 color: "blue.8",

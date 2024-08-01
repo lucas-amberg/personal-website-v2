@@ -59,7 +59,11 @@ export function EducationItem({
                 gap="0"
                 width="85%"
                 alignItems="flex-start">
-                <Heading size={headingSize || "8"}>{heading}</Heading>
+                <Heading
+                    as="h3"
+                    size={headingSize || "8"}>
+                    {heading}
+                </Heading>
                 {degree && <Text weight="bold">{degree}</Text>}
                 <Text weight={"bold"}>{timeframe}</Text>
                 {gpa && (

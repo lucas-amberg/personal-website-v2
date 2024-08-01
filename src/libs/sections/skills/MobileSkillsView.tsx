@@ -33,6 +33,7 @@ export function MobileSkillsView() {
                 alignItems="flex-start"
                 height="100%">
                 <Heading
+                    as="h3"
                     size="9"
                     style={{ zIndex: "10" }}>
                     Technical Skills
@@ -89,7 +90,9 @@ export function MobileSkillsView() {
                 justifyContent="center"
                 zIndex="10"
                 alignItems="flex-start">
-                <Heading size="8">
+                <Heading
+                    as="h3"
+                    size="8">
                     As a{" "}
                     <span
                         style={{
