@@ -132,7 +132,7 @@ export function WorkExperienceView() {
                         base: "100%",
                         xl: "1/3",
                     }}
-                    timeframe="June 2024 - Present"
+                    timeframe="June 2024 - August 2024"
                     description="As a software engineering intern at Pluto TV, I learned how to participate in scrum with large teams and develop in an agile environment. I also practiced writing scalable software at an industry standard level."
                     achievements={[
                         "Delivered a presentation on improving React Native apps for screen readers about better focus management and keyboard navigation.",
