@@ -36,7 +36,10 @@ export function WorkExperienceItem({
             borderRadius={props.borderRadius || "16px"}
             {...props}>
             <VStack
-                width="15%"
+                width={{
+                    base: "40px",
+                    md: "75px",
+                }}
                 alignItems="flex-start"
                 height="100%">
                 <Image
@@ -62,11 +65,12 @@ export function WorkExperienceItem({
                 <Text weight={"bold"}>{timeframe}</Text>
                 {description && <Text size="2">{description}</Text>}
                 {achievements && (
-                    <VStack>
+                    <VStack alignItems="flex-start">
                         {achievements.map((achievement, index) => (
                             <HStack
                                 key={achievement + "-" + index}
-                                alignItems="flex-start">
+                                width="full"
+                                justifyContent="flex-start">
                                 • <Text size="2">{achievement}</Text>
                             </HStack>
                         ))}
