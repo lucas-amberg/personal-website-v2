@@ -111,13 +111,47 @@ export function WorkExperienceView() {
                     base: "column",
                     xl: "row",
                 }}
+                pt="20px"
                 width="100%"
                 // Remove the fixed height property
                 // height={{
                 //   base: "auto",
                 //   xl: "85vh",
                 // }}
-                py="20px"
+                alignItems="stretch">
+                <WorkExperienceItem
+                    bg="#012F1F"
+                    color="#62CF7D"
+                    minHeight="100%"
+                    width="100%"
+                    headingSize="7"
+                    image={{
+                        src: "/logos/hirebird-logo.jpg",
+                        alt: "Hirebird Logo",
+                    }}
+                    heading="Software Engineer"
+                    companyName="Hirebird"
+                    timeframe="August 2024 - Present"
+                    description="As a software engineer at Hirebird, me and a team of three other talented engineers are building a platform to help early career professionals and laborers find jobs. Partnered with Lifetime Fitness, Rainbow Room, and many other companies, Hirebird is already making a huge impact in the New York City hiring scene, and will continue to gain prominence as new features are implemented into the platform."
+                    achievements={[
+                        'Implementing "Apply on Hirebird" feature, a one click solution for job applications on Hirebird partnered positions, used by 150+ job posts and 1000+ applicants.',
+                        "Resolved dozens of performance issues related to data fetching, reducing load times by an average of 0.5s per page on all pages of the platform.",
+                    ]}
+                />
+            </HStack>
+            <HStack
+                display="flex"
+                flexDirection={{
+                    base: "column",
+                    xl: "row",
+                }}
+                width="100%"
+                // Remove the fixed height property
+                // height={{
+                //   base: "auto",
+                //   xl: "85vh",
+                // }}
+                pb="20px"
                 alignItems="stretch" // This will make children stretch to fill the container height
             >
                 <WorkExperienceItem
@@ -141,8 +175,8 @@ export function WorkExperienceView() {
                     ]}
                 />
                 <WorkExperienceItem
-                    bg="green.12"
-                    color="green.7"
+                    bg="#012F1F"
+                    color="#62CF7D"
                     minHeight="100%"
                     width={{
                         base: "100%",
@@ -155,7 +189,7 @@ export function WorkExperienceView() {
                     }}
                     heading="Software Engineering Intern"
                     companyName="Hirebird"
-                    timeframe="Feb 2024 - June 2024"
+                    timeframe="February 2024 - June 2024"
                     description="As a software engineering intern at Hirebird, I gained experience in a fast paced startup environment and learned several valuable full stack development skills."
                     achievements={[
                         "Developed frontend with Next.js and Panda CSS, backend with TypeScript and Neo4j. Built cloud infrastructure with AWS and Pulumi.",
@@ -164,9 +198,10 @@ export function WorkExperienceView() {
                     ]}
                 />
                 <WorkExperienceItem
-                    bg="green.11"
+                    bg="#FFFFFF"
                     minHeight="100%"
                     headingSize="7"
+                    color="#608C32"
                     width={{
                         base: "100%",
                         xl: "1/3",
@@ -177,7 +212,7 @@ export function WorkExperienceView() {
                     }}
                     heading="Information Technology Student Specialist"
                     companyName="Port of Los Angeles"
-                    timeframe="Mar 2023 - May 2024"
+                    timeframe="March 2023 - May 2024"
                     description="As a student worker at the Port of Los Angeles, I supported the IT team in helping many different departments and divisions with their technology."
                     achievements={[
                         "Automated Microsoft Office patches on 200+ computers with Visual Basic scripts, which cut update times by 80%.",
