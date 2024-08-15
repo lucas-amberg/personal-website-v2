@@ -27,7 +27,7 @@ export function TestimonialItem({
 }: TestimonialItemProps) {
     return (
         <HStack
-            p={props.p || props.padding || "20px"}
+            p={props.p || props.padding || "0px"}
             alignItems="flex-start"
             justifyContent="flex-start"
             overflow="hidden"

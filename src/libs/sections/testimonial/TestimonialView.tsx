@@ -49,7 +49,6 @@ export function TestimonialView() {
                 alignItems="flex-start"
                 justifyContent="center"
                 height="100%"
-                p="20px"
                 width={{
                     base: "full",
                     lg: "50%",
@@ -59,7 +58,16 @@ export function TestimonialView() {
                     direction="up">
                     <Heading
                         as="h3"
-                        size={"9"}>
+                        className={css({
+                            fontSize: {
+                                base: "3rem",
+                                lg: "4.5rem",
+                            },
+                            py: {
+                                base: "5px",
+                                lg: "20px",
+                            },
+                        })}>
                         Testimonials
                     </Heading>
                 </Fade>
