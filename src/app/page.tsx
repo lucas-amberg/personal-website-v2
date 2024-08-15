@@ -7,6 +7,7 @@ import { WorkExperience } from "@/libs/sections/work-experience/WorkExperience";
 import { ContactForm } from "@/libs/sections/contact-form/ContactForm";
 import { ProjectsView } from "@/libs/sections/projects/ProjectsView";
 import { OpenSourceView } from "@/libs/sections/open-source/OpenSourceView";
+import { Testimonials } from "@/libs/sections/testimonial/Testimonials";
 
 export default function Home() {
     return (
@@ -29,6 +30,7 @@ export default function Home() {
             <WorkExperience />
             <ProjectsView />
             <OpenSourceView />
+            <Testimonials />
             <ContactForm />
 
             {process.env.NODE_ENV === "development" && (
