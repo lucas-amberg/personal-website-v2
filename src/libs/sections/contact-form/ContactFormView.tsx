@@ -41,6 +41,7 @@ export function ContactFormView() {
         <HStack
             width="screen"
             position="relative"
+            bg="gray.12"
             alignItems={{
                 base: "center",
                 lg: "flex-start",
