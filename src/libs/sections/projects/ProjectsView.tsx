@@ -111,6 +111,41 @@ export function ProjectsView() {
                 }}>
                 <Fade triggerOnce>
                     <ProjectItem
+                        href='https://www.interngoat.com'
+                        images={[
+                            {
+                                src: "/projects/interngoat-homepage.png",
+                                alt: "Interngoat Image 1",
+                            },
+                            {
+                                src: "/projects/interngoat-features.png",
+                                alt: "Interngoat Image 2",
+                            },
+                            {
+                                src: "/projects/interngoat-companies.png",
+                                alt: "Interngoat Image 3",
+                            },
+                        ]}
+                        title="Interngoat"
+                        description="Lead engineer of Interngoat, building the best platform to find internships worldwide."
+                        skills={[
+                            "Next.js",
+                            "TypeScript",
+                            "Panda CSS",
+                            "Neo4j",
+                            "Web Scraping",
+                            "Open AI"
+                        ]}
+                        startDate="August 2024"
+                        endDate="In Progress"
+                        tasks={[
+                            "Built autonomous web scraping system to find and input internships worldwide, adding hundreds of internships.",
+                            "Developed the full platform including an internship list and search feature, company list, and newsletter (coming soon)."
+                        ]}
+                    />
+                </Fade>
+                <Fade triggerOnce>
+                    <ProjectItem
                         images={[
                             {
                                 src: "/projects/green-field-homepage.png",
