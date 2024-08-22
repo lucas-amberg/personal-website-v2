@@ -125,6 +125,10 @@ export function ProjectsView() {
                                 src: "/projects/interngoat-companies.png",
                                 alt: "Interngoat Image 3",
                             },
+                            {
+                                src: "/projects/interngoat-companies-previews.png",
+                                alt: "Interngoat Image 4",
+                            },
                         ]}
                         title="Interngoat"
                         description="Co-founder of Interngoat, building the best platform to find internships worldwide."
