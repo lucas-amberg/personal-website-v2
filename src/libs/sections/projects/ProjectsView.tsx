@@ -129,9 +129,13 @@ export function ProjectsView() {
                                 src: "/projects/interngoat-companies-previews.png",
                                 alt: "Interngoat Image 4",
                             },
+                            {
+                                src: "/projects/interngoat-email.png",
+                                alt: "Interngoat Image 5",
+                            },
                         ]}
                         title="Interngoat"
-                        description="Co-founder of Interngoat, building the best platform to find internships worldwide."
+                        description="Co-founder of Interngoat, building the best platform and newsletter to find internships worldwide."
                         skills={[
                             "Next.js",
                             "TypeScript",
@@ -144,7 +148,8 @@ export function ProjectsView() {
                         endDate="In Progress"
                         tasks={[
                             "Built autonomous web scraping system to find and input internships worldwide, adding hundreds of internships.",
-                            "Developed the full platform including an internship list and search feature, company list, and newsletter (coming soon).",
+                            "Developed the full platform including an internship list, internship search feature, and company list.",
+                            "Designed and implemented a newsletter system using Resend and Vercel, sending a email everyday with new internships.",
                         ]}
                     />
                 </Fade>
