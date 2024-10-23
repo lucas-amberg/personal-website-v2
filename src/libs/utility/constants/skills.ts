@@ -6,4 +6,7 @@ export const skills = [
     "Nx Monorepo",
     "Turborepo",
     "Python",
+    "Java",
+    "Data Structures",
+    "Algorithms"
 ];
