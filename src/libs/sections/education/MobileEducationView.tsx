@@ -107,9 +107,7 @@ export function MobileEducationView() {
                     heading="University of Hertfordshire"
                     headingSize="8"
                     relevantCoursework={[
-                        "Computer Systems Security",
-                        "Software Architecture",
-                        "Web Development and Accessibility",
+                        "Computer Systems Security, Software Architecture, Web Development and Accessibility",
                     ]}
                     description="I will be fortunate enough to be studying abroad at the University of Hertfordshire in Hatfield, England, UK for this upcoming semester."
                 />
