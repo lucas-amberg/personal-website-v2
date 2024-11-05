@@ -60,7 +60,11 @@ export function DesktopEducationView() {
                     }}
                     heading="University of Hertfordshire"
                     headingSize="8"
-                    relevantCoursework={["Database Fundamentals"]}
+                    relevantCoursework={[
+                        "Computer Systems Security",
+                        "Software Architecture",
+                        "Web Development and Accessibility",
+                    ]}
                     description="I will be fortunate enough to be studying abroad at the University of Hertfordshire in Hatfield, England, UK for this upcoming semester."
                 />
             </VStack>
