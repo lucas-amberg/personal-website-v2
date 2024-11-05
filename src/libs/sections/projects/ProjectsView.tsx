@@ -157,6 +157,54 @@ export function ProjectsView() {
                     <ProjectItem
                         images={[
                             {
+                                src: "/projects/clear-view-home.png",
+                                alt: "Clear View Image 1",
+                            },
+                            {
+                                src: "/projects/clear-view-services.png",
+                                alt: "Clear View Image 2",
+                            },
+                            {
+                                src: "/projects/clear-view-reviews.png",
+                                alt: "Clear View Image 3",
+                            },
+                            {
+                                src: "/projects/clear-view-contact.png",
+                                alt: "Clear View Image 4",
+                            },
+                            {
+                                src: "/projects/clear-view-client.png",
+                                alt: "Clear View Image 5",
+                            },
+                            {
+                                src: "/projects/clear-view-users.png",
+                                alt: "Clear View Image 6",
+                            },
+                        ]}
+                        title="Clear View Website/CRM"
+                        description="As the head of development at Clear View, I am spearheading a CRM project alongside a homepage featuring a review system and quoting calculators for customers. The first iteration of the project, developed in June 2024, has resulted in over $2000 in sales for Clear View, helping them maintain contact with their past customers and future clients. The new version, started in October 2024, hopes to further improve this software with more contact, legal and other document management, and lead developing features."
+                        skills={[
+                            "Next.js",
+                            "TypeScript",
+                            "Panda CSS",
+                            "Neo4j",
+                            "Radix UI",
+                            "Auth.js",
+                            "Systems Design",
+                        ]}
+                        href="https://clearviews.pro"
+                        startDate="June 2024"
+                        endDate="In Progress"
+                        tasks={[
+                            "Designing CRM system with client sign up and invoice management for 200+ customers, and employee management for 15 employees. Facilitating contact and long term relations leading to over $2000 in sales.",
+                            "Building front end homepage for client reviews, photo gallery, and more marketing pages optimized for SEO",
+                        ]}
+                    />
+                </Fade>
+                <Fade triggerOnce>
+                    <ProjectItem
+                        images={[
+                            {
                                 src: "/projects/green-field-homepage.png",
                                 alt: "Green Field Image 1",
                             },
@@ -179,36 +227,6 @@ export function ProjectsView() {
                         tasks={[
                             "Leading development and designing system structure for two person contracted website redevelopment.",
                             "Streamlined development using Uix, a Neo4j graph library, allowing for seamless client tracking and reservation system, digitizing a formerly analog reservation system and lowering restaurant operational costs.",
-                        ]}
-                    />
-                </Fade>
-                <Fade triggerOnce>
-                    <ProjectItem
-                        images={[
-                            {
-                                src: "/projects/clear-view-client.png",
-                                alt: "Clearview Pros Image 1",
-                            },
-                            {
-                                src: "/projects/clear-view-users.png",
-                                alt: "Clearview Pros Image 2",
-                            },
-                        ]}
-                        title="Clearview Pros CRM"
-                        description="Solo contract designing a CRM web software for Clearview Pros, a local window washing business based in Orange County."
-                        skills={[
-                            "Next.js",
-                            "TypeScript",
-                            "Panda CSS",
-                            "Neo4j",
-                            "Radix UI",
-                        ]}
-                        startDate="June 2024"
-                        endDate="In Progress"
-                        tasks={[
-                            "Designed authentication system using Uix (Neo4j) and Auth.js, protecting company data from outsiders.",
-                            "Developed clean UI using Radix and Panda CSS, making client registration and keeping track of jobs simple for employees and users.",
-                            "Implemented a sorting system to keep track of when clients need to be contacted for new jobs, resulting in $1300+ in new sales in under a month.",
                         ]}
                     />
                 </Fade>
