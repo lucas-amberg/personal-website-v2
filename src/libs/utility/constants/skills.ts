@@ -8,5 +8,5 @@ export const skills = [
     "Python",
     "Java",
     "Data Structures",
-    "Algorithms"
+    "Algorithms",
 ];

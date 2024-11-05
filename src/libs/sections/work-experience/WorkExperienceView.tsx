@@ -105,20 +105,26 @@ export function WorkExperienceView() {
                     "You learn software engineering by engineering software..."
                 </Heading>
             </VStack>
-            <HStack
+            <VStack
                 display="flex"
-                flexDirection={{
-                    base: "column",
-                    xl: "row",
-                }}
                 pt="20px"
                 width="100%"
-                // Remove the fixed height property
-                // height={{
-                //   base: "auto",
-                //   xl: "85vh",
-                // }}
                 alignItems="stretch">
+                <WorkExperienceItem
+                    bg="#3064bc"
+                    color="#FFF"
+                    minHeight="100%"
+                    width="100%"
+                    headingSize="7"
+                    image={{
+                        src: "/logos/linkedin.svg",
+                        alt: "LinkedIn Logo",
+                    }}
+                    heading="Incoming Software Engineering Intern"
+                    companyName="LinkedIn"
+                    timeframe="Starting May 2025"
+                    description="I am very honored to be joining the LinkedIn team at the Mountain View campus next summer."
+                />
                 <WorkExperienceItem
                     bg="#012F1F"
                     color="#62CF7D"
@@ -138,7 +144,7 @@ export function WorkExperienceView() {
                         "Resolved dozens of performance issues related to data fetching, reducing load times by an average of 0.5s per page on all pages of the platform.",
                     ]}
                 />
-            </HStack>
+            </VStack>
             <HStack
                 display="flex"
                 flexDirection={{
@@ -146,14 +152,8 @@ export function WorkExperienceView() {
                     xl: "row",
                 }}
                 width="100%"
-                // Remove the fixed height property
-                // height={{
-                //   base: "auto",
-                //   xl: "85vh",
-                // }}
                 pb="20px"
-                alignItems="stretch" // This will make children stretch to fill the container height
-            >
+                alignItems="stretch">
                 <WorkExperienceItem
                     bg="black"
                     color="yellow.7"
