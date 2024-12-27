@@ -223,6 +223,7 @@ export function ProjectsView() {
                             "Park UI",
                         ]}
                         startDate="May 2024"
+                        href="https://greenfieldchurrascaria.com"
                         endDate="In Progress"
                         tasks={[
                             "Leading development and designing system structure for two person contracted website redevelopment.",
