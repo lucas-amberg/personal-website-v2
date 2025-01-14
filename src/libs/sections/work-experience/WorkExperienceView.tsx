@@ -137,11 +137,12 @@ export function WorkExperienceView() {
                     }}
                     heading="Software Engineer"
                     companyName="Hirebird"
-                    timeframe="August 2024 - Present"
+                    timeframe="August 2024 - January 2025"
                     description="As a software engineer at Hirebird, me and a team of three other talented engineers are building a platform to help early career professionals and laborers find jobs. Partnered with Lifetime Fitness, Rainbow Room, and many other companies, Hirebird is already making a huge impact in the New York City hiring scene, and will continue to gain prominence as new features are implemented into the platform."
                     achievements={[
                         'Implementing "Apply on Hirebird" feature, a one click solution for job applications on Hirebird partnered positions, used by 150+ job posts and 1000+ applicants.',
                         "Resolved dozens of performance issues related to data fetching, reducing load times by an average of 0.5s per page on all pages of the platform.",
+                        "Built an automated web scraping system using Puppeteer and OpenAI, scraping 1000+ jobs per day and self adjusting to achieve maximum results."
                     ]}
                 />
             </VStack>
