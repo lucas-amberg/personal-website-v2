@@ -120,10 +120,10 @@ export function WorkExperienceView() {
                         src: "/logos/linkedin.svg",
                         alt: "LinkedIn Logo",
                     }}
-                    heading="Incoming Software Engineering Intern"
+                    heading="Software Engineering Intern"
                     companyName="LinkedIn"
-                    timeframe="Starting May 2025"
-                    description="I am very honored to be joining the LinkedIn team at the Mountain View campus next summer."
+                    timeframe="May 2025 - Present"
+                    description="I am very honored to be joining the engineering team at LinkedIn this summer."
                 />
                 <WorkExperienceItem
                     bg="#012F1F"
